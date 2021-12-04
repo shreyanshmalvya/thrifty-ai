@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .navbar {
   width: 100%;
   display: -webkit-box;
@@ -15,15 +16,45 @@
           align-items: center;
   position: -webkit-sticky;
   position: sticky;
-  padding: 40px 0px;
+  top: 0px;
+  margin-top: 20px;
+  padding: 10px 0px;
+  background-color: black;
 }
 
 .navbar .navabarLogo {
-  margin-left: 65px;
+  margin-left: 150px;
+  background-color: transparent;
 }
 
 .navbar .navabarLogo img {
-  width: 65px;
+  width: 100px;
+  cursor: pointer;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.navbar .navabarLogo div {
+  position: absolute;
+  top: 45px;
+  left: 150px;
+  color: black;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  z-index: -1;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.navbar .navabarLogo:hover div {
+  -webkit-transform: translateX(80px);
+          transform: translateX(80px);
+  color: white;
+}
+
+.navbar .navabarLogo:hover img {
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
 }
 
 .navbar .navbarElements {
@@ -34,16 +65,25 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
   margin-right: 65px;
 }
 
 .navbar .navbarElements li {
-  margin: 0rem 1.25rem 0rem 1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin: 0rem 2rem 0rem 2rem;
 }
 
 .navbar .navbarElements li a {
   text-decoration: none;
   color: white;
+}
+
+.navbar .navbarElements li a:hover {
+  color: #B7CCFF;
 }
 /*# sourceMappingURL=navbar.css.map */

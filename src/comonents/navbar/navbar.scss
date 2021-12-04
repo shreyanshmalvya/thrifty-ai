@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 .navbar {
   width: 100%;
@@ -6,26 +7,62 @@
   justify-content: space-between;
   align-items: center;
   position: sticky;
-  padding: 40px 0px;
+  top: 0px;
+  margin-top: 20px;
+  padding: 10px 0px;
+  background-color: black;
 
-  .navabarLogo{
-      margin-left: 65px;
-      img{
-          width: 
-      }
-  }
-  
-  .navbarElements {
+
+  .navabarLogo {
+    margin-left: 150px;
+    background-color: transparent;
+    
+    img {
+        width: 100px;
+        cursor: pointer;
+        transition: all 0.8s ease-in-out; 
+    }
+    div{
+        position: absolute;
+        top: 45px;
+        left: 150px;
+        color: black;
+        transition: all 0.8s ease-in-out; 
+        z-index: -1;
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        
+    }
+
+    &:hover{
+        div{
+            transform: translateX(80px);
+            color: white;
+        }
+        img{
+            transform: translateX(-20px);
+        }
+    }
+}
+
+.navbarElements {
     display: flex;
     flex-flow: row nowrap;
+    align-items: center;
     list-style: none;
     margin-right: 65px;
-
+    
     li {
-        margin: 0rem 1.25rem 0rem 1.25rem;
-      a {
-        text-decoration: none;
-        color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        margin: 0rem 2rem 0rem 2rem;
+        
+        a {
+            text-decoration: none;
+            color: white;
+            &:hover {
+                color: #B7CCFF;
+            }
       }
     }
   }

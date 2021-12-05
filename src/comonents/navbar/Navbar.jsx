@@ -10,10 +10,10 @@ const Navbar = () => {
                 <div>THRIFTY AI</div>
             </div>
             <ul className='navbarElements'>
-                <li><a href='#'>HOME</a></li>
-                <li><a href='#'>TECHNOLOGY</a></li>
-                <li><a href='#'>CONTACT US</a></li>
-                <li><a href='#'>BLOGS</a></li>
+                <li className="nav-item">HOME</li>
+                <li className="nav-item">TECHNOLOGY</li>
+                <li className="nav-item">CONTACT US</li>
+                <li className="nav-item">BLOGS</li>
             </ul>
         </div>
     )

@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+@font-face{
+    font-family: 'glitch-city';
+    src: url('../../fonts/glitch-city.ttf');
+}
+
 .navbar {
   width: 100%;
   display: flex;
@@ -8,7 +13,7 @@
   align-items: center;
   position: sticky;
   top: 0px;
-  margin-top: 20px;
+  margin-top: 40px;
   padding: 10px 0px;
   background-color: black;
 
@@ -20,20 +25,19 @@
     img {
         width: 100px;
         cursor: pointer;
-        transition: all 0.4s ease-in-out; 
+        transition: all 0.8s ease-in-out; 
     }
     div{
         position: absolute;
         top: 45px;
         left: 150px;
         color: black;
-        transition: all 0.2s ease-in-out; 
+        transition: all 0.4s ease-in-out; 
         z-index: -1;
-        font-family: "Roboto", sans-serif;
         font-size: 20px;
         
     }
-
+    
     &:hover{
         div{
             transform: translateX(80px);
@@ -57,18 +61,50 @@
         font-size: 20px;
         margin: 0rem 2rem 0rem 2rem;
         text-shadow: 0px 4px 7px rgba(255, 255, 255, 0.28);
-        transition: all 0.2s ease-in-out;
-        
-        &:hover {
-            color: #B7CCFF;
-            font-family: ;
-            
-        }
-        a {
-            text-decoration: none;
-            color: white;
-            
-      }
+        transition: all 1s ease-in-out;
+        // &:hover {
+        //     color: #B7CCFF;
+        //     font-family: 'glitch-city';
+        //     text-shadow: none;
+        // }
     }
-  }
+}
+}
+
+.nav-item {
+    text-decoration: none;
+    padding : 7px 10px;
+    color: white;
+    position: relative;
+    
+    &::after{
+        padding : 7px 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: 'glitch-city';
+        width: 0%;
+        opacity: 0;
+        transition: all 0.3s cubic-bezier(.37,.06,.94,.78);
+    }
+    &:nth-child(1)::after{
+        content : "Home";
+        text-transform: uppercase;
+    }
+    &:nth-child(2)::after{
+        content : "Technology";
+        text-transform: uppercase;
+    }
+    &:nth-child(3)::after{
+        content : "Contact Us";
+        text-transform: uppercase;
+    }
+    &:nth-child(4)::after{
+        content : "Blogs";
+        text-transform: uppercase;
+    }
+    &:hover::after{
+        width: 100%;
+        opacity: 1;
+    }
 }

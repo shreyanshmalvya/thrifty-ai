@@ -77,6 +77,7 @@
 }
 
 .navbar .navbarElements li {
+  text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   margin: 0rem 2rem 0rem 2rem;
@@ -87,7 +88,7 @@
 
 .nav-item {
   text-decoration: none;
-  padding: 7px 10px;
+  padding: 7px 0px;
   color: white;
   position: relative;
 }
@@ -127,5 +128,26 @@
 .nav-item:hover::after {
   width: 100%;
   opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 560px) {
+  .navabarLogo {
+    margin-left: 30px !important;
+  }
+  .navbarElements {
+    position: fixed;
+    margin-right: 0 !important;
+    inset: 0 0 0 30%;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    padding: 3.5rem;
+  }
+  .navbarElements li {
+    padding: 1.5rem 0px;
+  }
 }
 /*# sourceMappingURL=navbar.css.map */

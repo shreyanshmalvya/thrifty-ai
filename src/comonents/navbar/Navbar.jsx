@@ -7,13 +7,13 @@ const Navbar = () => {
         <div className="navbar">
             <div className='navabarLogo'>
                 <img src={PF + 'logo.png'} alt="Thrifty logo" className='expandableLogo' />
-                <div>Thrifty AI</div>
+                <div>THRIFTY AI</div>
             </div>
             <ul className='navbarElements'>
-                <li><a href='#'>Home</a></li>
-                <li><a href='#'>Technology</a></li>
-                <li><a href='#'>Contact Us</a></li>
-                <li><a href='#'>Blogs</a></li>
+                <li><a href='#'>HOME</a></li>
+                <li><a href='#'>TECHNOLOGY</a></li>
+                <li><a href='#'>CONTACT US</a></li>
+                <li><a href='#'>BLOGS</a></li>
             </ul>
         </div>
     )

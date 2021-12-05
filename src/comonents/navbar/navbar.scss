@@ -20,14 +20,14 @@
     img {
         width: 100px;
         cursor: pointer;
-        transition: all 0.8s ease-in-out; 
+        transition: all 0.4s ease-in-out; 
     }
     div{
         position: absolute;
         top: 45px;
         left: 150px;
         color: black;
-        transition: all 0.8s ease-in-out; 
+        transition: all 0.2s ease-in-out; 
         z-index: -1;
         font-family: "Roboto", sans-serif;
         font-size: 20px;
@@ -56,13 +56,18 @@
         font-family: "Roboto", sans-serif;
         font-size: 20px;
         margin: 0rem 2rem 0rem 2rem;
+        text-shadow: 0px 4px 7px rgba(255, 255, 255, 0.28);
+        transition: all 0.2s ease-in-out;
         
+        &:hover {
+            color: #B7CCFF;
+            font-family: ;
+            
+        }
         a {
             text-decoration: none;
             color: white;
-            &:hover {
-                color: #B7CCFF;
-            }
+            
       }
     }
   }

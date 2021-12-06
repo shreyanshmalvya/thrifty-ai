@@ -10,7 +10,7 @@ export default function Hero() {
                     <img src={tryImg1} alt="" />
                 </div>
                 <div className="heroRight">
-                    <div className="rTop">
+                    <div className="heroRTop">
                         <div className="glitch">
                             <span aria-hidden="true">Ever met</span>
                             Ever met
@@ -23,9 +23,11 @@ export default function Hero() {
                         </div>
                     </div>
 
-                    <div className="rBottom">
+                    <div className="heroRBottom">
                         <p>AI Humans are AI powered characters that can
                         see, hear and understand. They look like us, talk like us and behave like us</p>
+
+                        <span className="heroButton">Learn More</span>
                     </div>
 
                 </div>

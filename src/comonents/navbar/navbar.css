@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @font-face {
-  font-family: 'glitch-city';
+  font-family: "glitch-city";
   src: url("../../fonts/glitch-city.ttf");
 }
 
@@ -86,6 +86,10 @@
   transition: all 1s ease-in-out;
 }
 
+.sideDrawer {
+  display: none !important;
+}
+
 .nav-item {
   text-decoration: none;
   padding: 7px 0px;
@@ -98,7 +102,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  font-family: 'glitch-city';
+  font-family: "glitch-city";
   width: 0%;
   opacity: 0;
   -webkit-transition: all 0.3s cubic-bezier(0.37, 0.06, 0.94, 0.78);
@@ -130,24 +134,115 @@
   opacity: 1;
 }
 
+/* option tray */
+.toggleButton {
+  height: 25px;
+  width: 40px;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.toggleButton:focus {
+  outline: none;
+}
+
+.toggleButtonLine {
+  width: 40px;
+  height: 2.5px;
+  border-radius: 1px;
+  background-color: white;
+}
+
 /* Responsive */
-@media (max-width: 560px) {
-  .navabarLogo {
+@media (max-width: 576px) {
+  .navbar {
+    z-index: 100;
+  }
+  .navbar .navabarLogo {
     margin-left: 30px !important;
   }
-  .navbarElements {
+  .navbar .sideBarHide {
+    -webkit-transform: translateX(100%) !important;
+            transform: translateX(100%) !important;
+  }
+  .navbar .sideDrawer {
+    display: block !important;
+    z-index: 101;
+  }
+  .navbar .nav-item-slide {
+    -webkit-transform: translateX(50%) !important;
+            transform: translateX(50%) !important;
+  }
+  .navbar .navbarElements {
     position: fixed;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
     margin-right: 0 !important;
     inset: 0 0 0 30%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
-    padding: 3.5rem;
+    padding: 8rem 0.5px;
+    border-radius: 5px;
+    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transform: translateX(0%);
   }
-  .navbarElements li {
-    padding: 1.5rem 0px;
+  @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    .navbar .navbarElements .modal {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+    .navbar .navbarElements .warning {
+      display: none;
+    }
+  }
+  .navbar .navbarElements .nav-item {
+    -webkit-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .navbar .navbarElements .nav-item:nth-child(1) {
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+  }
+  .navbar .navbarElements .nav-item:nth-child(2) {
+    -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+  }
+  .navbar .navbarElements .nav-item:nth-child(3) {
+    -webkit-transition-delay: 0.4s;
+            transition-delay: 0.4s;
+  }
+  .navbar .navbarElements .nav-item:nth-child(4) {
+    -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+  }
+  .navbar .navbarElements li {
+    padding: 2rem 0px;
+    color: black;
+    z-index: inherit;
+    font-weight: 700;
   }
 }
 /*# sourceMappingURL=navbar.css.map */

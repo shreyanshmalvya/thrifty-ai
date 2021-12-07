@@ -5,8 +5,7 @@ const PF = process.env.REACT_APP_PUBLIC_FOLDER;
 const Navbar = () => {
 
     const [toggle,setToggle] = useState(false);
-    const [sideBar,setSideBar] = useState(false)
-    console.log(toggle);
+    const [sideBar,setSideBar] = useState(false);
 
     return (
         <div className="navbar">
@@ -20,17 +19,13 @@ const Navbar = () => {
                 <li className={`nav-item ${sideBar? '' : 'nav-item-slide'}`}>CONTACT US</li>
                 <li className={`nav-item ${sideBar? '' : 'nav-item-slide'}`}>BLOGS</li>
             </ul>
-            
-            {toggle? null :
-    
             <div className='sideDrawer'>
-                <button className='toggleButton' onClick = {() => {setToggle(false); setSideBar(!sideBar)}}>
-                    <div className="toggleButtonLine"></div>
-                    <div className="toggleButtonLine"></div>
-                    <div className="toggleButtonLine"></div>
+                <button className='toggleButton' onClick = {() => {setToggle(!toggle); setSideBar(!sideBar)}}>
+                    <div className={`toggleButtonLine ${!toggle? '' : 'cross'}`}></div>
+                    <div className={`toggleButtonLine ${!toggle? '' : 'cross'}`}></div>
+                    <div className={`toggleButtonLine ${!toggle? '' : 'cross'}`}></div>
                 </button>
             </div>
-            }
         </div>
     )
 }

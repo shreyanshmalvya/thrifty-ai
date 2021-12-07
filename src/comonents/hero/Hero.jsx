@@ -1,26 +1,37 @@
-import React from 'react'
 import './hero.css'
+import tryImg1 from "../../images/tryImg1.png"
 
-const Hero = () => {
+
+export default function Hero() {
     return (
-        <div className="heroWrapper">
-            <div className='introHeader'>
-                <div className='introHeading'>
-                    <div>EVER MET AN</div>
-                    <div className='glitch'>
-                        <span aria-hidden="true">ARTIFICAL HUMAN </span>
-                        ARTIFICAL HUMAN
-                        <span aria-hidden="true">ARTIFICAL HUMAN </span>
+        <div>
+            <div className="heroWrapper">
+                <div className="heroLeft">
+                    <img src={tryImg1} alt="" />
+                </div>
+                <div className="heroRight">
+                    <div className="heroRTop">
+                        <div className="glitch">
+                            <span aria-hidden="true">Ever met</span>
+                            Ever met
+                            <span aria-hidden="true">Ever met</span>
+                        </div>
+                        <div className="glitch">
+                            <span aria-hidden="true">artifical human</span>
+                            artifical human
+                            <span aria-hidden="true">artifical human</span>
+                        </div>
                     </div>
+
+                    <div className="heroRBottom">
+                        <p>AI Humans are AI powered characters that can
+                        see, hear and understand. They look like us, talk like us and behave like us</p>
+
+                        <span className="heroButton">Learn More</span>
+                    </div>
+
                 </div>
-                <div className='heroInfo'>
-                    AI Humans are AI powered characters that can
-                    see, hear and understand. They look like us, talk like us and behave like us
-                </div>
-                <button className='learnMore'>Learn More</button>
             </div>
         </div>
     )
 }
-
-export default Hero

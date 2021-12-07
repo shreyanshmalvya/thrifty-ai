@@ -290,7 +290,7 @@
 
 @media (max-width: 576px) {
   .sideDrawer {
-    margin-right: 0px !important;
+    margin-right: 20px !important;
   }
 }
 /*# sourceMappingURL=navbar.css.map */

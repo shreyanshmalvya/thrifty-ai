@@ -11,11 +11,7 @@ export default function Hero() {
                 </div>
                 <div className="heroRight">
                     <div className="heroRTop">
-                        <div className="glitch">
-                            <span aria-hidden="true">Ever met</span>
-                            Ever met
-                            <span aria-hidden="true">Ever met</span>
-                        </div>
+                        <p className="heroGlitchHeading">Ever met an</p>
                         <div className="glitch">
                             <span aria-hidden="true">artifical human</span>
                             artifical human

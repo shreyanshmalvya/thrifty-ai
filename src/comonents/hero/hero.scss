@@ -7,8 +7,8 @@
 .heroWrapper{
   margin: 0 40px;
   display: flex;
-  height: calc(100vh - 60px - 89.21px);
   color: white;
+  height: calc(100vh - 60px - 89.21px);
   .heroLeft{
     flex: 1;
     display: flex;
@@ -24,10 +24,20 @@
     flex-direction: column;
     justify-content: center;
     
+    .heroRTop{
+      .heroGlitchHeading{
+        text-align: end;
+        text-transform: uppercase;
+        font-family: "glitch-city";
+        font-size: 58px;
+      }
+    }
+    
     .heroRBottom{
       display: flex;
       flex-direction: column;
       // justify-content: end;
+      font-size: 20px;
       align-items: flex-end;
       text-align: right;
       p{
@@ -37,18 +47,22 @@
       .heroButton{
         background: #85A2E8;
         border-radius: 24px;
-        padding: 5px 15px;
+        // padding: 5px 15px;
+        width: 175px;
+        height: 48px;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        color: black;
+        font-size: 18px;
       }
     }
   }
 }
 
 .glitch {
-  font-size: 3rem;
+  font-size: 70px;
   font-weight: 700;
   text-transform: uppercase;
   position: relative;

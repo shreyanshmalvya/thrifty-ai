@@ -47,6 +47,7 @@
       .heroButton{
         background: #85A2E8;
         border-radius: 24px;
+        font-weight: 500;
         // padding: 5px 15px;
         width: 175px;
         height: 48px;
@@ -62,8 +63,9 @@
 }
 
 .glitch {
-  font-size: 70px;
-  font-weight: 700;
+  font-family: "glitch-city";
+  font-size: 58px;
+  // font-weight: 100;
   text-transform: uppercase;
   position: relative;
 
@@ -134,16 +136,16 @@
   }
 }
 
-// @media (prefers-reduced-motion: reduce) {
-//   *,
-//   ::before,
-//   ::after {
-//     animation-delay: -1ms !important;
-//     animation-duration: 1ms !important;
-//     animation-iteration-count: 1 !important;
-//     background-attachment: initial !important;
-//     scroll-behavior: auto !important;
-//     transition-duration: 0s !important;
-//     transition-delay: 0s !important;
-//   }
-// }
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}

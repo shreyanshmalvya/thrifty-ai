@@ -13,9 +13,9 @@ export default function Hero() {
                     <div className="heroRTop">
                         <p className="heroGlitchHeading">Ever met an</p>
                         <div className="glitch">
-                            <span aria-hidden="true">artifical human</span>
+                            {/* <span aria-hidden="true">artifical human</span> */}
                             artifical human
-                            <span aria-hidden="true">artifical human</span>
+                            {/* <span aria-hidden="true">artifical human</span> */}
                         </div>
                     </div>
 

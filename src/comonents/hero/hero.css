@@ -78,6 +78,7 @@
 .heroWrapper .heroRight .heroRBottom .heroButton {
   background: #85A2E8;
   border-radius: 24px;
+  font-weight: 500;
   width: 175px;
   height: 48px;
   display: -webkit-box;
@@ -95,8 +96,8 @@
 }
 
 .glitch {
-  font-size: 70px;
-  font-weight: 700;
+  font-family: "glitch-city";
+  font-size: 58px;
   text-transform: uppercase;
   position: relative;
   text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
@@ -178,6 +179,25 @@
   }
   100% {
     text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    -webkit-animation-delay: -1ms !important;
+            animation-delay: -1ms !important;
+    -webkit-animation-duration: 1ms !important;
+            animation-duration: 1ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    -webkit-transition-duration: 0s !important;
+            transition-duration: 0s !important;
+    -webkit-transition-delay: 0s !important;
+            transition-delay: 0s !important;
   }
 }
 /*# sourceMappingURL=hero.css.map */

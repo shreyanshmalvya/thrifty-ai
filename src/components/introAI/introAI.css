@@ -40,7 +40,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 20px;
+  padding-top: 40px;
+  padding-inline: 20px;
 }
 
 .grid .introAITop {
@@ -117,6 +118,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .grid .introAIBottom .introAIBottomLeft span {
@@ -133,7 +137,6 @@
 }
 
 .grid .introAIBottom .introAIBottomLeft span:nth-child(2) {
-  text-align: right;
   font-family: "NunitoSans";
   font-style: "Regular";
   font-size: 18px;
@@ -152,10 +155,12 @@
 
 .grid .introAIBottom .introAIBottomRight img {
   width: 100%;
+  margin-top: -30px;
 }
 
 @media (max-width: 992px) {
   .grid .introAITop {
+    padding-top: 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -175,6 +180,7 @@
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    padding-top: 20px;
   }
   .grid .introAIBottom .introAIBottomLeft {
     padding-inline: 10px;

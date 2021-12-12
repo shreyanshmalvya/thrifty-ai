@@ -5,8 +5,8 @@ const ClaimDivs = (props) => {
     return (
         <>
             <div className='styledDivWrapper'>
-                <div className='captionTxt'>{props.caption}</div>
-                <div className="bodyTxt">{props.body}</div>
+                <div className='captionTxt'>hhh</div>
+                <div className="bodyTxt">hhh</div>
             </div>
             <div className="endingWrapper" />
         </>

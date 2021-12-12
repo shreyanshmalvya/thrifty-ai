@@ -13,7 +13,7 @@ const ClaimDivRows = () => {
             <div>
                 {
                     data.map((key)=>{
-                        <ClaimDivs caption= {key.caption} body = {key.body} />
+                        <div><ClaimDivs caption= {key.caption} body = {key.body} /></div>
                     })
                 }
             </div>

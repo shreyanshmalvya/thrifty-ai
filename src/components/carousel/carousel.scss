@@ -14,18 +14,27 @@
 
 .carouselContainer{
     display: flex;
+    color: white;
     .carouselLeft{
         flex: 1;
-        border: 2px solid red;
+        // border: 2px solid red;
+        display: flex;
+        align-items: center;
+        font-family: Nunito Sans;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 55px;
+
     }
     .carouselMiddle{
         position: relative;
         flex: 1;
-        overflow: hidden;
+        // border: 2px solid red;
         display: flex;
-        border: 2px solid red;
+        justify-content: center;
         .carouselSlides{
             height: 500px;
+            width: 70%;
             video{
                 object-fit: cover;
                 width: 100%;
@@ -33,21 +42,29 @@
             }
         }
         .prev{
-            color: white;
+            color: black;
             position: absolute;
+            top: 50%;
             left: 0;
             cursor: pointer;
+            background-color: white;
+            padding: 2px 10px;
+            border-radius: 2px;
         }
         .next{
-            color: white;
+            color: black;
             position: absolute;
             right: 0;
+            top: 50%;
             cursor: pointer;
+            padding: 2px 10px;
+            background-color: white;
+            border-radius: 2px;
         }
     }
     .carouselRight{
         flex: 1;
-        border: 2px solid red;
+        // border: 2px solid red;
         display: flex;
     }
 }
@@ -56,6 +73,6 @@
     min-width: 100px;
     min-height: 100px;
     height: 100px;
-    width: 100px;
+    // width: 100px;
     border: 1px solid white;
 }

@@ -21,13 +21,23 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: white;
 }
 
 .carouselContainer .carouselLeft {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 55px;
 }
 
 .carouselContainer .carouselMiddle {
@@ -35,15 +45,17 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px solid red;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .carouselContainer .carouselMiddle .carouselSlides {
   height: 500px;
+  width: 70%;
 }
 
 .carouselContainer .carouselMiddle .carouselSlides video {
@@ -54,24 +66,31 @@
 }
 
 .carouselContainer .carouselMiddle .prev {
-  color: white;
+  color: black;
   position: absolute;
+  top: 50%;
   left: 0;
   cursor: pointer;
+  background-color: white;
+  padding: 2px 10px;
+  border-radius: 2px;
 }
 
 .carouselContainer .carouselMiddle .next {
-  color: white;
+  color: black;
   position: absolute;
   right: 0;
+  top: 50%;
   cursor: pointer;
+  padding: 2px 10px;
+  background-color: white;
+  border-radius: 2px;
 }
 
 .carouselContainer .carouselRight {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,7 +100,6 @@
   min-width: 100px;
   min-height: 100px;
   height: 100px;
-  width: 100px;
   border: 1px solid white;
 }
 /*# sourceMappingURL=carousel.css.map */

@@ -34,7 +34,7 @@ export default function Carousel() {
             </div>
             <div className="carouselContainer">
                 <div className="carouselLeft">
-
+                    <p>AI HUMANS FOR EVERY INDUSTRY VERTICAL</p>
                 </div>
                 <div className="carouselMiddle">
                     <div className="carouselSlides">
@@ -44,15 +44,10 @@ export default function Carousel() {
                     <span class="next" onClick={next}>&#10095;</span>
                 </div>
                 <div className="carouselRight">
-                    {/* <div className="box"></div>
                     <div className="box"></div>
                     <div className="box"></div>
                     <div className="box"></div>
                     <div className="box"></div>
-                    <div className="box"></div>
-                    <div className="box"></div>
-                    <div className="box"></div> */}
-
                 </div>
             </div>
         </div>

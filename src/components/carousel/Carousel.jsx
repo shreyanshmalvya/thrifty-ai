@@ -51,10 +51,18 @@ export default function Carousel() {
                     <span className="next" onClick={next}>&#10095;</span>
                 </div>
                 <div className="carouselRight">
-                    <div className={`box ${n===0?"boxActive":""}`} onClick={()=>thumb(0)}> <img src={PF+"/Thumbnails/AditiThumb.png"} alt="" /> </div>
-                    <div className={`box ${n===1?"boxActive":""}`} onClick={()=>thumb(1)}><img src={PF+"/Thumbnails/DikshaThumb.png"} alt="" /></div>
-                    <div className={`box ${n===2?"boxActive":""}`} onClick={()=>thumb(2)}><img src={PF+"/Thumbnails/RevanthThumb.png"} alt="" /></div>
-                    <div className={`box ${n===3?"boxActive":""}`} onClick={()=>thumb(3)}><img src={PF+"/Thumbnails/SiddarthThumb.png"} alt="" /></div>
+                    <div className="carouselRightTop">
+                        <p className="carouselName">{name[n]}</p>
+                        <p className="carouselDesignation">{designation[n]}</p>
+                        <p className="carouselDesc">{desc[n]}</p>
+                    </div>
+
+                    <div className="carouselRightBottom">
+                        <div className={`box ${n===0?"boxActive":""}`} onClick={()=>thumb(0)}> <img src={PF+"/Thumbnails/AditiThumb.png"} alt="" /> </div>
+                        <div className={`box ${n===1?"boxActive":""}`} onClick={()=>thumb(1)}><img src={PF+"/Thumbnails/DikshaThumb.png"} alt="" /></div>
+                        <div className={`box ${n===2?"boxActive":""}`} onClick={()=>thumb(2)}><img src={PF+"/Thumbnails/RevanthThumb.png"} alt="" /></div>
+                        <div className={`box ${n===3?"boxActive":""}`} onClick={()=>thumb(3)}><img src={PF+"/Thumbnails/SiddarthThumb.png"} alt="" /></div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -96,10 +96,20 @@
   display: flex;
 }
 
+.carouselContainer .carouselRight .box img {
+  width: 100%;
+}
+
 .box {
   min-width: 100px;
   min-height: 100px;
   height: 100px;
+  width: 100px;
   border: 1px solid white;
+  cursor: pointer;
+}
+
+.boxActive {
+  border: 2px solid blue;
 }
 /*# sourceMappingURL=carousel.css.map */

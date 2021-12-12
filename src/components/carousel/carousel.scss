@@ -66,6 +66,11 @@
         flex: 1;
         // border: 2px solid red;
         display: flex;
+        .box{
+            img{
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -73,6 +78,10 @@
     min-width: 100px;
     min-height: 100px;
     height: 100px;
-    // width: 100px;
+    width: 100px;
     border: 1px solid white;
+    cursor: pointer;
+}
+.boxActive{
+    border: 2px solid blue;
 }

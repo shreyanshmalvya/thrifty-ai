@@ -3,6 +3,7 @@ import Navbar from '../components/navbar/Navbar';
 import Hero from '../components/hero/Hero';
 import IntroAI from '../components/introAI/IntroAI';
 import ClaimDivRows from '../components/claimDivRow/ClaimDivRows';
+import Carousel from '../components/carousel/Carousel';
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <Hero />
             <IntroAI />
             <ClaimDivRows/>
+            <Carousel/>
         </div>
     )
 }

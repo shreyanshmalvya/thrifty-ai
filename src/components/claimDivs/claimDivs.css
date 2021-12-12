@@ -54,11 +54,16 @@
   font-family: "Inter";
   font-size: 29px;
   font-weight: 400;
+  background-color: white;
 }
 
 .endingWrapper {
   background: url("./styledDivs/styledDivFooter.svg");
   background-repeat: no-repeat;
   background-size: 100%;
+  padding: 1px;
+  max-width: 345px;
+  height: 20px;
+  margin-left: 100px;
 }
 /*# sourceMappingURL=claimDivs.css.map */

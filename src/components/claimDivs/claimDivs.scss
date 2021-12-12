@@ -31,7 +31,7 @@
     max-width: 345px;
     margin-left: 100px;
     padding: 15px 5px;
-
+    
     .captionTxt {
         font-family: "Inter";
         font-weight: 800;
@@ -43,6 +43,7 @@
         font-family: "Inter";
         font-size: 29px;
         font-weight: 400;
+        background-color: white;
     }
 }
 
@@ -50,5 +51,8 @@
     background: url('./styledDivs/styledDivFooter.svg');
     background-repeat: no-repeat;
     background-size: 100%;
-
+    padding: 1px;
+    max-width: 345px;
+    height: 20px;
+    margin-left: 100px;
 }

@@ -12,8 +12,8 @@ const Home = () => {
             <Navbar />
             <Hero />
             <IntroAI />
-            <ClaimDivs/>
             <Carousel/>
+            <ClaimDivs/>
         </div>
     )
 }

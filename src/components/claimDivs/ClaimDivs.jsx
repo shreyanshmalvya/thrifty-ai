@@ -8,8 +8,7 @@ const ClaimDivs = (props) => {
                 <div className='captionTxt'>hhh</div>
                 <div className="bodyTxt">hhh</div>
             </div>
-            <div className="endingWrapper">
-            </div>
+            <div className="endingWrapper" ></div>
         </>
     )
 }

@@ -1,3 +1,30 @@
+@font-face {
+  font-family: "NunitoSans";
+  font-style: "Black";
+  font-weight: 800;
+  src: url("../../fonts/nunito-sans/NunitoSans-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "NunitoSans";
+  font-style: "Regular";
+  font-weight: 400;
+  src: url("../../fonts/nunito-sans/NunitoSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NunitoSans";
+  font-style: "ExtraLight";
+  font-weight: 300;
+  src: url("../../fonts/nunito-sans/NunitoSans-ExtraLight.ttf");
+}
+
+.carouselComponentWrapper {
+  margin: 20px 40px;
+  font-family: "NunitoSans";
+  font-style: normal;
+}
+
 .carouselTop {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5,13 +32,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 20px;
 }
 
 .carouselTop p:first-child {
-  font-family: Nunito Sans;
-  font-style: normal;
   font-weight: 800;
-  font-size: 66px;
+  font-size: 58px;
   color: #FFFFFF;
   text-transform: uppercase;
   text-shadow: 0px 4px 23px rgba(0, 0, 0, 0.25);
@@ -34,10 +60,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: Nunito Sans;
-  font-style: normal;
   font-weight: 800;
-  font-size: 55px;
+  font-size: 40px;
+  padding-right: 40px;
 }
 
 .carouselContainer .carouselMiddle {
@@ -54,7 +79,7 @@
 }
 
 .carouselContainer .carouselMiddle .carouselSlides {
-  height: 500px;
+  height: calc(100vh - 110px);
   width: 70%;
 }
 
@@ -65,26 +90,36 @@
   height: 100%;
 }
 
-.carouselContainer .carouselMiddle .prev {
-  color: black;
+.carouselContainer .carouselMiddle .prev, .carouselContainer .carouselMiddle .next {
   position: absolute;
   top: 50%;
-  left: 0;
   cursor: pointer;
   background-color: white;
-  padding: 2px 10px;
+  width: 44px;
+  height: 30px;
   border-radius: 2px;
 }
 
-.carouselContainer .carouselMiddle .next {
-  color: black;
-  position: absolute;
-  right: 0;
+.carouselContainer .carouselMiddle .prev img, .carouselContainer .carouselMiddle .next img {
+  width: 30px;
+  height: 15.78px;
+  position: relative;
   top: 50%;
-  cursor: pointer;
-  padding: 2px 10px;
-  background-color: white;
-  border-radius: 2px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.carouselContainer .carouselMiddle .prev {
+  left: 0;
+}
+
+.carouselContainer .carouselMiddle .next {
+  right: 0;
+}
+
+.carouselContainer .carouselMiddle .prev:active, .carouselContainer .carouselMiddle .next:active {
+  background-color: #646464;
 }
 
 .carouselContainer .carouselRight {
@@ -102,6 +137,19 @@
       justify-content: space-around;
 }
 
+.carouselContainer .carouselRight .carouselRightTop .carouselName {
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.carouselContainer .carouselRight .carouselRightTop .carouselDesignation {
+  font-size: 25px;
+}
+
+.carouselContainer .carouselRight .carouselRightTop .carouselDesc {
+  font-size: 20px;
+}
+
 .carouselContainer .carouselRight .carouselRightBottom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,7 +162,9 @@
   max-width: 95px;
   min-height: 95px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 6px;
+  -webkit-box-shadow: 10px 10px 25px -7px rgba(100, 100, 100, 0.75);
+          box-shadow: 10px 10px 25px -7px rgba(100, 100, 100, 0.75);
 }
 
 .carouselContainer .carouselRight .box img {
@@ -122,11 +172,11 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 .carouselContainer .carouselRight .boxActive {
-  -webkit-box-shadow: 0px 4px 22px rgba(63, 63, 64, 0.84);
-          box-shadow: 0px 4px 22px rgba(63, 63, 64, 0.84);
+  -webkit-box-shadow: 10px 10px 25px -7px rgba(133, 162, 232, 0.75);
+          box-shadow: 10px 10px 25px -7px rgba(133, 162, 232, 0.75);
 }
 /*# sourceMappingURL=carousel.css.map */

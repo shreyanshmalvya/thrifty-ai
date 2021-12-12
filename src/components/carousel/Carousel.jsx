@@ -35,7 +35,7 @@ export default function Carousel() {
     }
 
     return (
-        <div>
+        <div className="carouselComponentWrapper">
             <div className="carouselTop">
                 <p className="carouselTopHeading">future generations of worker</p>
             </div>
@@ -47,8 +47,8 @@ export default function Carousel() {
                     <div className="carouselSlides">
                         <video autoPlay muted src={video}></video>
                     </div>
-                    <span className="prev" onClick={prev}>&#10094;</span>
-                    <span className="next" onClick={next}>&#10095;</span>
+                    <span className="prev" onClick={prev}><img src={PF+"prev.png"} alt="" /></span>
+                    <span className="next" onClick={next}><img src={PF+"next.png"} alt="" /></span>
                 </div>
                 <div className="carouselRight">
                     <div className="carouselRightTop">

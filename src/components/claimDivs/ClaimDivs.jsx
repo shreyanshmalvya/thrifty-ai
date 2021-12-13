@@ -6,9 +6,7 @@ import claimDiv2 from "./styledDivs/styledDivFooter.svg"
 const ClaimDivs = (props) => {
     return (
         <div className="claimDivWrapper">
-            <div className="claimDivStartingWrapper">
-                <img src={claimDiv1} alt="" />
-            </div>
+            <div className="claimDivStartingWrapper"><img src={claimDiv1} alt="" /></div>
             <div className='styledDivWrapper'>
                 <p className='captionTxt'>{props.caption}</p>
                 <p className="bodyTxt">{props.body}</p>

@@ -152,3 +152,41 @@
     transition-delay: 0s !important;
   }
 }
+
+@media (max-width: 992px) {
+  .heroWrapper{
+    flex-direction: column;
+    height: max-content;
+    margin: 0 20px 40px 20px;
+    .heroLeft{
+      margin-bottom: 20px;
+    }
+    .heroRight{
+      align-items: center;
+      .heroRTop{
+        .heroGlitchHeading{
+          text-align: center !important;
+          font-size: 42px;
+        }
+        .glitch{
+          font-size: 42px;
+          text-align: center;
+        }
+      }
+      .heroRBottom{
+        align-items: center;
+        p{
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px){
+  
+}
+
+@media (max-width: 360px){
+ 
+}

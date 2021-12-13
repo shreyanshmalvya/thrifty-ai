@@ -158,17 +158,11 @@
 }
 
 @media (max-width: 992px) {
-  .grid .introAIHeader {
+  .introAIHeader {
     font-size: 42px !important;
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
+    text-align: center;
   }
   .grid .introAITop {
-    padding-top: 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -182,6 +176,9 @@
   }
   .grid .introAITop .introAITopRight span {
     text-align: center !important;
+  }
+  .grid .introAITop .introAITopRight span:first-child {
+    font-size: 30px;
   }
   .grid .introAIBottom {
     -webkit-box-orient: vertical;
@@ -198,6 +195,9 @@
   }
   .grid .introAIBottom .introAIBottomLeft span {
     text-align: center !important;
+  }
+  .grid .introAIBottom .introAIBottomLeft span:first-child {
+    font-size: 30px;
   }
 }
 

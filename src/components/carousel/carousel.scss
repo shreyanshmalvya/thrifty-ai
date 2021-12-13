@@ -46,7 +46,7 @@
         display: flex;
         align-items: center;
         font-weight: 800;
-        font-size: 40px;
+        font-size: 50px;
         padding-right: 40px;
 
     }
@@ -55,7 +55,7 @@
         flex: 1;
         display: flex;
         justify-content: center;
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
         .carouselSlides{
             height: calc(100vh - 110px);
             width: 70%;
@@ -110,6 +110,7 @@
             }
             .carouselDesc{
                 font-size: 20px;
+                font-weight: 300;
             }
         }
 
@@ -118,8 +119,8 @@
             justify-content: space-around;
         }
         .box{
-            max-width: 95px;
-            min-height: 95px;
+            max-width: 6.3vw;
+            min-height: 6.3vw;
             cursor: pointer;
             border-radius: 6px;
             box-shadow: 10px 10px 25px -7px rgba(100,100,100,0.75);
@@ -137,3 +138,79 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .carouselComponentWrapper{
+        margin: 20px 20px;
+        .carouselTopHeading{
+            font-size: 42px !important;
+            text-align: center;
+        }
+        .carouselContainer{
+            .carouselLeft{
+                font-size: 30px;
+            }
+            .carouselMiddle{
+                .carouselSlides{
+                    height: 400px;
+                }
+                .prev, .next{
+                    width: 35px;
+                    height: 24px;
+                    img{
+                        width: 13px;
+                        height: 7px;
+                    }
+                }
+            }
+            .carouselRight{
+                .carouselName{
+                    font-size: 25px;
+                }
+                .carouselDesignation{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+  }
+  
+  @media (max-width: 992px){
+      .carouselContainer{
+          flex-direction: column;
+          align-items: center;
+          .carouselLeft{
+              padding: 0;
+              margin-bottom: 20px;
+              p{
+                  text-align: center;
+              }
+          }
+          .carouselMiddle{
+              width: 350px;
+              margin-bottom: 20px;
+          }
+          .carouselRight{
+              padding-left: 0;
+              align-items: center;
+              .carouselRightTop{
+                  margin-bottom: 20px;
+                  p{
+                      text-align: center;
+                  }
+              }
+              .carouselRightBottom{
+                  width: 450px;
+              }
+              .box{
+                  min-height: 75px;
+                  min-width: 75px;
+              }
+          }
+      }
+    
+  }
+  
+  @media (max-width: 360px){
+   
+  }
+  

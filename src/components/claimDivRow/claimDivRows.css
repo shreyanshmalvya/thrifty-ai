@@ -6,4 +6,15 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
+
+.claimDivRowWrapper .claimDivWrapper {
+  margin: 10px;
+}
+
+@media (max-width: 1200px) {
+  .claimDivRowWrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 /*# sourceMappingURL=claimDivRows.css.map */

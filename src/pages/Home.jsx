@@ -4,7 +4,7 @@ import Hero from '../components/hero/Hero';
 import IntroAI from '../components/introAI/IntroAI';
 // import ClaimDivRows from '../components/claimDivRow/ClaimDivRows';
 import Carousel from '../components/carousel/Carousel';
-import ClaimDivs from '../components/claimDivs/ClaimDivs';
+// import ClaimDivs from '../components/claimDivs/ClaimDivs';
 
 const Home = () => {
     return (
@@ -13,7 +13,7 @@ const Home = () => {
             <Hero />
             <IntroAI />
             <Carousel/>
-            <ClaimDivs/>
+            {/* <ClaimDivRows/> */}
         </div>
     )
 }

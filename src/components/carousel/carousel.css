@@ -76,6 +76,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 20px;
 }
 
 .carouselContainer .carouselMiddle .carouselSlides {
@@ -135,6 +136,7 @@
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding-left: 40px;
 }
 
 .carouselContainer .carouselRight .carouselRightTop .carouselName {

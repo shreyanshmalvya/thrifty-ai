@@ -1,5 +1,6 @@
 import React from 'react'
 import ClaimDivs from '../claimDivs/ClaimDivs'
+import "../claimDivRow/claimDivRows.css"
 
 const data = [
     {caption: '24/7', body: 'Personalised Customer Support'},
@@ -10,12 +11,10 @@ const data = [
 
 const ClaimDivRows = () => {
         return (
-            <div>
-                {
-                    data.map((key)=>{
-                        <div><ClaimDivs caption= {key.caption} body = {key.body} /></div>
-                    })
-                }
+            <div className='claimDivWrapper'>
+                {data.map((item, index) => {
+                    return <ClaimDivs key={index} caption={item.caption} body={item.body}/>
+                })}
             </div>
         )
     }

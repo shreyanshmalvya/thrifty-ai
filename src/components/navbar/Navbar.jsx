@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './navbar.css'
-const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+import Logo from "../../assets/Logo.png";
+
 
 const Navbar = () => {
 
@@ -10,7 +11,7 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <div className='navabarLogo'>
-                <img src={PF + 'logo.png'} alt="Thrifty logo" className='expandableLogo' />
+                <img src={Logo} alt="Thrifty logo" className='expandableLogo' />
                 <div>THRIFTY AI</div>
             </div>
             <ul className={`navbarElements ${sideBar? '' : 'sideBarHide'}`}>

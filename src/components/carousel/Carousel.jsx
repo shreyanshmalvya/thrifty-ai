@@ -1,11 +1,18 @@
 import "../carousel/carousel.css"
 import { useState } from "react";
-
-const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+import AditiCarVid from "../../assets/Videos/AditiCarVid.mp4"
+import DikshaCarVid from "../../assets/Videos/DikshaCarVid.mp4"
+import RevanthCarVid from "../../assets/Videos/RevanthCarVid.mp4"
+import SiddarthCarVid from "../../assets/Videos/SiddarthCarVid.mp4"
+import AditiThumb from "../../assets/Thumbnails/AditiThumb.png"
+import DikshaThumb from "../../assets/Thumbnails/DikshaThumb.png"
+import RevanthThumb from "../../assets/Thumbnails/RevanthThumb.png"
+import SiddarthThumb from "../../assets/Thumbnails/SiddarthThumb.png"
+import nextButton from "../../assets/Icons/next.png"
+import prevButton from "../../assets/Icons/prev.png"
 
 export default function Carousel() {
-    // const videos = ["PF/Videos/carVid1.mp4", "PF/Videos/carVid2.mp4", "PF/Videos/carVid3.mp4"];
-    const videos = [`${PF}/Videos/AditiCarVid.mp4`, `${PF}/Videos/DikshaCarVid.mp4`, `${PF}/Videos/RevanthCarVid.mp4`, `${PF}/Videos/SiddarthCarVid.mp4`];
+    const videos = [AditiCarVid, DikshaCarVid, RevanthCarVid, SiddarthCarVid];
     const name = ["Aditi", "Diksha", "Revanth", "Siddarth"];
     const designation = ["Hospital Worker", "Hotel Manager", "Office Receptionist", "Sales Executive"];
     const desc = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut ante auctor, sollicitudin ipsum vel, pellentesque nibh. Nulla a sem nec enim sodales finibus eu vel magna.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut ante auctor, sollicitudin ipsum vel, pellentesque nibh. Nulla a sem nec enim sodales finibus eu vel magna.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut ante auctor, sollicitudin ipsum vel, pellentesque nibh. Nulla a sem nec enim sodales finibus eu vel magna.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut ante auctor, sollicitudin ipsum vel, pellentesque nibh. Nulla a sem nec enim sodales finibus eu vel magna."];
@@ -47,8 +54,8 @@ export default function Carousel() {
                     <div className="carouselSlides">
                         <video autoPlay muted src={video}></video>
                     </div>
-                    <span className="prev" onClick={prev}><img src={PF+"prev.png"} alt="" /></span>
-                    <span className="next" onClick={next}><img src={PF+"next.png"} alt="" /></span>
+                    <span className="prev" onClick={prev}><img src={prevButton} alt="" /></span>
+                    <span className="next" onClick={next}><img src={nextButton} alt="" /></span>
                 </div>
                 <div className="carouselRight">
                     <div className="carouselRightTop">
@@ -58,10 +65,10 @@ export default function Carousel() {
                     </div>
 
                     <div className="carouselRightBottom">
-                        <div className={`box ${n===0?"boxActive":""}`} onClick={()=>thumb(0)}> <img src={PF+"/Thumbnails/AditiThumb.png"} alt="" /> </div>
-                        <div className={`box ${n===1?"boxActive":""}`} onClick={()=>thumb(1)}><img src={PF+"/Thumbnails/DikshaThumb.png"} alt="" /></div>
-                        <div className={`box ${n===2?"boxActive":""}`} onClick={()=>thumb(2)}><img src={PF+"/Thumbnails/RevanthThumb.png"} alt="" /></div>
-                        <div className={`box ${n===3?"boxActive":""}`} onClick={()=>thumb(3)}><img src={PF+"/Thumbnails/SiddarthThumb.png"} alt="" /></div>
+                        <div className={`box ${n===0?"boxActive":""}`} onClick={()=>thumb(0)}> <img src={AditiThumb} alt="" /> </div>
+                        <div className={`box ${n===1?"boxActive":""}`} onClick={()=>thumb(1)}><img src={DikshaThumb} alt="" /></div>
+                        <div className={`box ${n===2?"boxActive":""}`} onClick={()=>thumb(2)}><img src={RevanthThumb} alt="" /></div>
+                        <div className={`box ${n===3?"boxActive":""}`} onClick={()=>thumb(3)}><img src={SiddarthThumb} alt="" /></div>
                     </div>
                 </div>
             </div>

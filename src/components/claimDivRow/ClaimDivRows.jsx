@@ -11,7 +11,7 @@ const data = [
 
 const ClaimDivRows = () => {
         return (
-            <div className='claimDivWrapper'>
+            <div className='claimDivRowWrapper'>
                 {data.map((item, index) => {
                     return <ClaimDivs key={index} caption={item.caption} body={item.body}/>
                 })}

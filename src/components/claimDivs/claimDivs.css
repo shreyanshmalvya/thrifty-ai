@@ -20,11 +20,6 @@
 }
 
 .styledDivWrapper {
-  padding: 0;
-  margin: 0;
-  background: url("./styledDivs/styledDivTop.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,36 +30,52 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 345px;
-  margin-left: 100px;
-  padding: 15px 5px;
-  padding-bottom: 0px;
+  width: 345px;
+  padding: 0px 5px;
+  margin-bottom: -1px;
+  background-color: white;
 }
 
 .styledDivWrapper .captionTxt {
   font-family: "Inter";
   font-weight: 800;
   font-size: 48px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
 }
 
 .styledDivWrapper .bodyTxt {
   padding-top: 2px;
   font-family: "Inter";
-  font-size: 29px;
+  font-size: 20px;
   font-weight: 400;
   width: 345px;
-  background-color: white;
+  text-align: center;
 }
 
-.endingWrapper {
-  background: url("./styledDivs/styledDivFooter.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  max-width: 345px;
-  height: 20px;
-  margin-left: 100px;
+.claimDivWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.claimDivWrapper .claimDivStartingWrapper {
+  width: 345px;
+  height: 17px;
+}
+
+.claimDivWrapper .claimDivStartingWrapper img {
+  width: 100%;
+}
+
+.claimDivWrapper .claimDivEndingWrapper {
+  width: 345px;
+}
+
+.claimDivWrapper .claimDivEndingWrapper img {
+  width: 100%;
 }
 /*# sourceMappingURL=claimDivs.css.map */

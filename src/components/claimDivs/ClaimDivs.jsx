@@ -1,15 +1,22 @@
 import React from 'react'
 import './claimDivs.css'
+import claimDiv1 from "./styledDivs/styledDivTop.svg"
+import claimDiv2 from "./styledDivs/styledDivFooter.svg"
 
 const ClaimDivs = (props) => {
     return (
-        <>
-            <div className='styledDivWrapper'>
-                <div className='captionTxt'>{props.caption}</div>
-                <div className="bodyTxt">{props.body}</div>
+        <div className="claimDivWrapper">
+            <div className="claimDivStartingWrapper">
+                <img src={claimDiv1} alt="" />
             </div>
-            <div className="endingWrapper" ></div>
-        </>
+            <div className='styledDivWrapper'>
+                <p className='captionTxt'>{props.caption}</p>
+                <p className="bodyTxt">{props.body}</p>
+            </div>
+            <div className="claimDivEndingWrapper" >
+                <img src={claimDiv2} alt="" />
+            </div>
+        </div>
     )
 }
 

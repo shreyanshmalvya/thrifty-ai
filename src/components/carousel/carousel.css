@@ -32,7 +32,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .carouselTop p:first-child {
@@ -99,16 +99,21 @@
   width: 44px;
   height: 30px;
   border-radius: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .carouselContainer .carouselMiddle .prev img, .carouselContainer .carouselMiddle .next img {
-  width: 30px;
-  height: 15.78px;
+  width: 24px;
+  height: 12px;
   position: relative;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .carouselContainer .carouselMiddle .prev {

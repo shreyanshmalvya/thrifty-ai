@@ -5,17 +5,19 @@
 }
 
 .heroWrapper{
-  margin: 0 40px;
+  margin: 0 40px 0 0;
   display: flex;
   color: white;
   height: calc(100vh - 60px - 89.21px);
+  margin-bottom: 40px;
   .heroLeft{
     flex: 1;
     display: flex;
     align-items: center;
-    img{
+    video{
       width: 100%;
-      height:min-content;
+      height: 100%;
+      object-fit: cover;
     }
   }
   .heroRight{

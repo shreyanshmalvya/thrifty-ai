@@ -52,7 +52,7 @@ export default function Carousel() {
                 </div>
                 <div className="carouselMiddle">
                     <div className="carouselSlides">
-                        <video autoPlay muted src={video}></video>
+                        <video loop autoPlay muted src={video}></video>
                     </div>
                     <span className="prev" onClick={prev}><img src={prevButton} alt="" /></span>
                     <span className="next" onClick={next}><img src={nextButton} alt="" /></span>

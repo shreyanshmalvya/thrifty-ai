@@ -70,13 +70,13 @@ const MediaToggle = () => {
                 <img src = {} alt = '' />
             </div>
 
-            <div className="photoConatiner">
+            {/* <div className="photoConatiner">
                 <img src = {} alt = '' />
                 <img src = {} alt = '' />
                 <img src = {} alt = '' />
                 <img src = {} alt = '' />
                 <img src = {} alt = '' />
-            </div>
+            </div> */}
 
         </div>
     )

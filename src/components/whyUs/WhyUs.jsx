@@ -1,4 +1,10 @@
 import '../whyUs/whyUs.css';
+import WhyUsDiv from '../whyUsDiv/WhyUsDiv';
+import adidas from "../../assets/adidas.png";
+import goibibo from "../../assets/goibibo.png";
+import birla from "../../assets/birla.png";
+import person from "../../assets/person.png";
+import logo from "../../assets/Logo.png";
 
 export default function WhyUs() {
     return (
@@ -34,7 +40,38 @@ export default function WhyUs() {
                 </div>    
             </div>
             <div className="whyUsBottom">
-                
+                <div className="whyUsBottomLeft">
+                    <img src={logo} alt="" />
+                </div>
+                <div className="whyUsBottomRight">
+                    <div className="carouselDesktop">
+                        <WhyUsDiv message="Hyper personalization is next big thing in our mind" name="Abhishek Sinha, Head CRM Adidas, India" brandLogo={adidas} displayPicture={person}/>
+                        <WhyUsDiv message="Wow moments locks the customer, Once you give it you have your customer" name="Abhinav Narula, Head of Brand, Goibibo" brandLogo={goibibo} displayPicture={person}/>
+                        <WhyUsDiv message="Future CX is about figuring out and experimenting what works, where technology plays a key role" name="Namrita Mahindro, CDO, Aditya Birla Group" brandLogo={birla} displayPicture={person}/>
+                    </div>
+                    <div class="slider">
+                        <div class="slide-track">
+                            <div class="slide">
+                                <WhyUsDiv message="Hyper personalization is next big thing in our mind" name="Abhishek Sinha, Head CRM Adidas, India" brandLogo={adidas} displayPicture={person}/>
+                            </div>
+                            <div class="slide">
+                                <WhyUsDiv message="Wow moments locks the customer, Once you give it you have your customer" name="Abhinav Narula, Head of Brand, Goibibo" brandLogo={goibibo} displayPicture={person}/>
+                            </div>
+                            <div class="slide">
+                                <WhyUsDiv message="Future CX is about figuring out and experimenting what works, where technology plays a key role" name="Namrita Mahindro, CDO, Aditya Birla Group" brandLogo={birla} displayPicture={person}/>
+                            </div>
+                            <div class="slide">
+                                <WhyUsDiv message="Hyper personalization is next big thing in our mind" name="Abhishek Sinha, Head CRM Adidas, India" brandLogo={adidas} displayPicture={person}/>
+                            </div>
+                            <div class="slide">
+                                <WhyUsDiv message="Wow moments locks the customer, Once you give it you have your customer" name="Abhinav Narula, Head of Brand, Goibibo" brandLogo={goibibo} displayPicture={person}/>
+                            </div>
+                            <div class="slide">
+                                <WhyUsDiv message="Future CX is about figuring out and experimenting what works, where technology plays a key role" name="Namrita Mahindro, CDO, Aditya Birla Group" brandLogo={birla} displayPicture={person}/>
+                            </div>
+                        </div>
+</div>
+                </div>
             </div>
         </div>
     )

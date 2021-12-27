@@ -19,6 +19,28 @@
   src: url("../../fonts/nunito-sans/NunitoSans-ExtraLight.ttf");
 }
 
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-340px * 3));
+            transform: translateX(calc(-340px * 3));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-340px * 3));
+            transform: translateX(calc(-340px * 3));
+  }
+}
+
 .whyUsWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,19 +56,14 @@
 }
 
 .whyUsWrapper .whyUsTop {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .whyUsWrapper .whyUsTop .whyUsTopLeft {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding-right: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .whyUsWrapper .whyUsTop .whyUsTopLeft :nth-child(1) {
@@ -67,24 +84,22 @@
 }
 
 .whyUsWrapper .whyUsTop .whyUsTopRight {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   font-weight: 300;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   font-size: 16px;
+  margin-bottom: 40px;
 }
 
 .whyUsWrapper .whyUsTop .whyUsTopRight div {
   border: 2px solid white;
   border-radius: 10px;
   padding: 20px 10px;
-  max-width: 14vw;
+  max-width: 25vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,5 +134,112 @@
   color: #B88B1B;
   font-style: italic;
   margin-bottom: 10px;
+}
+
+.whyUsWrapper .whyUsBottom {
+  margin: 40px -40px 0 -40px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.whyUsWrapper .whyUsBottom .whyUsBottomLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.whyUsWrapper .whyUsBottom .whyUsBottomLeft img {
+  width: 200px;
+}
+
+.whyUsWrapper .whyUsBottom .whyUsBottomRight {
+  width: 100%;
+  margin: 30px 40px 30px 0;
+}
+
+.whyUsWrapper .whyUsBottom .whyUsBottomRight .carouselDesktop {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: black;
+  -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+          box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 90%;
+  border-radius: 3px;
+}
+
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(340px * 6);
+}
+
+.slider .slide {
+  width: 340px;
+}
+
+.slider {
+  display: none !important;
+}
+
+@media (max-width: 1300px) {
+  .whyUsBottomLeft {
+    display: none !important;
+  }
+  .whyUsBottomRight {
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .whyUsBottom {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .carouselDesktop {
+    display: none !important;
+  }
+  .whyUsBottomLeft {
+    display: none !important;
+  }
+  .whyUsBottomRight {
+    margin-right: 0 !important;
+  }
+  .slider {
+    display: block !important;
+  }
+  .whyUsBottom {
+    background-color: black !important;
+  }
 }
 /*# sourceMappingURL=whyUs.css.map */

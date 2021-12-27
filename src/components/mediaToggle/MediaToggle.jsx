@@ -1,8 +1,10 @@
 import React from 'react'
 import { useState } from 'react/cjs/react.development';
+import nextButton from "../../assets/Icons/next.png"
+import prevButton from "../../assets/Icons/prev.png"
 
 const MediaToggle = () => {
-    const embedIDs = [];
+    const embedIDs = ['_j3FQf5yqu8',''];
     const [url, setUrl] = useState(embedIDs[0]);
 
     const YoutubeEmbed = ({ url }) => (
@@ -51,14 +53,14 @@ const MediaToggle = () => {
             <div className="videoContainer">
             <div className="videpWrapperMediaToggle">
                 <span className="prev" onClick={prev}><img src={prevButton} alt="" /></span>
-                <YoutubeEmbed embedId={url} />
+                <div className="player"><img src ={} alt= 'clickbait' onClick={()=> YoutubeEmbed(url)}/></div>
                 <span className="next" onClick={next}><img src={nextButton} alt="" /></span>
             </div>
             <div className="captionTrayMediaToggle">
                 <div className={`thumbnail ${key === 0 ? 'thumbnailactive' : ' '}`} onClick={() => swiper(0)}><img src={ } /></div>
-                <div className={`thumbnail ${key === 1 ? 'thumbnailactive' : ' '}`} onClick={() => swiper(1)}><img src={ } /></div>
+                {/* <div className={`thumbnail ${key === 1 ? 'thumbnailactive' : ' '}`} onClick={() => swiper(1)}><img src={ } /></div>
                 <div className={`thumbnail ${key === 2 ? 'thumbnailactive' : ' '}`} onClick={() => swiper(2)}><img src={ } /></div>
-                <div className={`thumbnail ${key === 3 ? 'thumbnailactive' : ' '}`} onClick={() => swiper(3)}><img src={ } /></div>
+                <div className={`thumbnail ${key === 3 ? 'thumbnailactive' : ' '}`} onClick={() => swiper(3)}><img src={ } /></div> */}
             </div>
             </div>
 
@@ -70,13 +72,13 @@ const MediaToggle = () => {
                 <img src = {} alt = '' />
             </div>
 
-            {/* <div className="photoConatiner">
+            <div className="photoConatiner">
                 <img src = {} alt = '' />
                 <img src = {} alt = '' />
                 <img src = {} alt = '' />
                 <img src = {} alt = '' />
                 <img src = {} alt = '' />
-            </div> */}
+            </div>
 
         </div>
     )

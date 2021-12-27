@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "NunitoSans";
+    font-style: "Black";
+    font-weight: 800;
+    src: url("../../fonts/nunito-sans/NunitoSans-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "NunitoSans";
+    font-style: "Regular";
+    font-weight: 400;
+    src: url("../../fonts/nunito-sans/NunitoSans-Regular.ttf");
+}
+
+.topTrayMediaToggle {
+    color: white;
+    padding: 40px 0;
+    .header {
+        font-family: "NunitoSans";
+        font-weight: 800;
+        font-size: 42px;
+        margin-left: 130px;
+        text-transform: uppercase;
+    }
+    .optionTrayMediaToggle {
+        display: flex;
+        justify-content: center;
+        .toggleOptions {
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 400;
+            padding: 15px 60px;
+            border: 2px solid white;
+            font-family: "NunitoSans";
+            text-transform: uppercase;
+            span{
+                display: inline-block;
+                height: 16px;
+                width: 16px;
+                color: white;
+            }
+        }
+    }
+}
+.videoContainer {
+    .videoWrapperMediaToggle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 30px;
+        div {
+            &:nth-child(1) {
+                display: flex;
+                justify-content: center;
+                width: 61px;
+                height: 44px;
+                background-color: white;
+                border-radius: 3px;
+                cursor: pointer;
+                img {
+                    object-fit: none;
+                }
+            }
+            &:nth-child(2) {
+                img {
+                    object-fit: contain;
+                    width: 853px;
+                    height: 480px;
+                    cursor: pointer;
+                }
+            }
+            &:nth-child(3) {
+                display: flex;
+                width: 61px;
+                height: 44px;
+                background-color: white;
+                border-radius: 3px;
+                cursor: pointer;
+                img {
+                    object-fit: none;
+                }
+            }
+        }
+    }
+    .captionTrayMediaToggle {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        justify-content: center;
+        .thumbnail{
+            img{
+                opacity: 50%;
+            }
+        }
+        .thumbnailactive{
+            img{
+                opacity: 100%;
+            }
+        }
+        div {
+            img {
+                object-fit: contain;
+                height: 120px;
+                width: 220px;
+            }
+        }
+    }
+}

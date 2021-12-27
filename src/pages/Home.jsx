@@ -5,6 +5,7 @@ import IntroAI from '../components/introAI/IntroAI';
 import ClaimDivRows from '../components/claimDivRow/ClaimDivRows';
 import Carousel from '../components/carousel/Carousel';
 import WhyUs from '../components/whyUs/WhyUs';
+import MediaToggle from '../components/mediaToggle/MediaToggle';
 // import ClaimDivs from '../components/claimDivs/ClaimDivs';
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
             <IntroAI />
             <Carousel/>
             <ClaimDivRows/>
+            <MediaToggle />
             <WhyUs/>
         </div>
     )

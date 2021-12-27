@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "Inter";
+  font-style: "Black";
+  font-weight: 800;
+  src: url("../../fonts/inter/Inter-Black.otf");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: "Regular";
+  font-weight: 400;
+  src: url("../../fonts/inter/Inter-Regular.otf");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: "SemiBold";
+  font-weight: 600;
+  src: url("../../fonts/inter/Inter-SemiBold.otf");
+}
+
+.whyUsDivWrapper {
+  width: 340px;
+  background-color: black;
+  font-size: 16px;
+  padding: 20px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 3px;
+}
+
+.whyUsDivWrapper .whyUsDivTop {
+  margin-bottom: 20px;
+}
+
+.whyUsDivWrapper .whyUsDivTop p {
+  text-align: center;
+  font-weight: 600;
+}
+
+.whyUsDivWrapper .whyUsDivBottom {
+  font-family: "Inter";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.whyUsDivWrapper .whyUsDivBottom :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+
+.whyUsDivWrapper .whyUsDivBottom :nth-child(1) img {
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.whyUsDivWrapper .whyUsDivBottom :nth-child(1) p {
+  text-align: left;
+}
+
+.whyUsDivWrapper .whyUsDivBottom :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.whyUsDivWrapper .whyUsDivBottom :nth-child(2) img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 60px;
+  max-width: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: 15px;
+}
+/*# sourceMappingURL=whyUsDiv.css.map */

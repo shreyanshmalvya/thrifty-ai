@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "NunitoSans";
+  font-style: "Black";
+  font-weight: 800;
+  src: url("../../fonts/nunito-sans/NunitoSans-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "NunitoSans";
+  font-style: "Regular";
+  font-weight: 400;
+  src: url("../../fonts/nunito-sans/NunitoSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NunitoSans";
+  font-style: "ExtraLight";
+  font-weight: 300;
+  src: url("../../fonts/nunito-sans/NunitoSans-ExtraLight.ttf");
+}
+
+.whyUsWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  font-family: "NunitoSans";
+  font-size: 20px;
+  margin: 80px 40px;
+}
+
+.whyUsWrapper .whyUsTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.whyUsWrapper .whyUsTop .whyUsTopLeft {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-right: 40px;
+}
+
+.whyUsWrapper .whyUsTop .whyUsTopLeft :nth-child(1) {
+  font-weight: 800;
+  font-size: 58px;
+  text-transform: uppercase;
+}
+
+.whyUsWrapper .whyUsTop .whyUsTopLeft :nth-child(2) {
+  font-weight: 800;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.whyUsWrapper .whyUsTop .whyUsTopLeft :nth-child(3) {
+  font-style: normal;
+  font-weight: 300;
+}
+
+.whyUsWrapper .whyUsTop .whyUsTopRight {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+}
+
+.whyUsWrapper .whyUsTop .whyUsTopRight div {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 20px 10px;
+  max-width: 14vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.whyUsWrapper .whyUsTop .whyUsTopRight div hr {
+  border: 0;
+  height: 2px;
+  text-align: center;
+  background-color: #BE6600;
+  margin-bottom: 10px;
+}
+
+.whyUsWrapper .whyUsTop .whyUsTopRight div :nth-child(1) {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.whyUsWrapper .whyUsTop .whyUsTopRight div :nth-child(3) {
+  margin-bottom: 10px;
+}
+
+.whyUsWrapper .whyUsTop .whyUsTopRight div :nth-child(4) {
+  color: #B88B1B;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=whyUs.css.map */

@@ -34,7 +34,7 @@ export default function WhyUs() {
                 </div>    
             </div>
             <div className="whyUsBottom">
-
+                
             </div>
         </div>
     )

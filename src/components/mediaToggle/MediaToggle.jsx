@@ -2,6 +2,16 @@ import React from 'react'
 import { useState } from 'react/cjs/react.development';
 import nextButton from "../../assets/Icons/next.png"
 import prevButton from "../../assets/Icons/prev.png"
+import explore from '../../assets/ai-samples/explore.jpg'
+import feelthevibe from '../../assets/ai-samples/feelthevibe.jpg'
+import justLikeUs from '../../assets/ai-samples/JustLikeUs.jpg'
+import lowangle from '../../assets/ai-samples/lowangle.jpg'
+import selfaware from '../../assets/ai-samples/selfaware.jpg'
+import enigmach from '../../assets/events/enigmach.jpeg'
+import enigmach2 from '../../assets/events/enigmach2.jpeg'
+import enigmach3 from '../../assets/events/enigmach3.jpeg'
+import us from '../../assets/events/us.jpeg'
+import IAS from '../../assets/events/IAS.jpeg'
 
 const MediaToggle = () => {
     const embedIDs = ['_j3FQf5yqu8',''];
@@ -65,19 +75,19 @@ const MediaToggle = () => {
             </div>
 
             <div className="eventConatiner">
-                <img src = {} alt = '' />
-                <img src = {} alt = '' />
-                <img src = {} alt = '' />
-                <img src = {} alt = '' />
-                <img src = {} alt = '' />
+                <img src = {IAS} alt = 'MeetWithIAS' />
+                <img src = {enigmach} alt = 'eventImg' />
+                <img src = {enigmach2} alt = 'eventImg' />
+                <img src = {enigmach3} alt = 'eventImg' />
+                <img src = {us} alt = 'ourteam' />
             </div>
 
             <div className="photoConatiner">
-                <img src = {} alt = '' />
-                <img src = {} alt = '' />
-                <img src = {} alt = '' />
-                <img src = {} alt = '' />
-                <img src = {} alt = '' />
+                <img src = {explore} alt = 'explore' />
+                <img src = {feelthevibe} alt = 'feelthevibe' />
+                <img src = {justLikeUs} alt = 'justlikeus' />
+                <img src = {lowangle} alt = 'lowangle' />
+                <img src = {selfaware} alt = 'selfaware' />
             </div>
 
         </div>

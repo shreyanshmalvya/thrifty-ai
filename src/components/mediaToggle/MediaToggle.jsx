@@ -13,27 +13,27 @@ import enigmach2 from '../../assets/events/enigmach2.jpeg'
 import enigmach3 from '../../assets/events/enigmach3.jpeg'
 import us from '../../assets/events/us.jpeg'
 import IAS from '../../assets/events/IAS.png'
-import thumbnail from '../../assets/thumbnail.png'
+import thumbnail from '../../assets/videoThumbnails/thumbnail.jpg'
+import cover1 from '../../assets/videoThumbnails/cover1.jpg'
+import cover2 from '../../assets/videoThumbnails/cover2.jpg'
+import cover3 from '../../assets/videoThumbnails/cover3.jpg'
+import OutsideClickHandler from 'react-outside-click-wrapper/build/OutsideClickHandler';
+
 
 const MediaToggle = () => {
-    const embedIDs = ['_j3FQf5yqu8', '_j3FQf5yqu4', '_j3FQf5yqu5', '_j3FQf5yqu3'];
+    const embedIDs = ['_j3FQf5yqu8', 'citoCiZUHg0', 'i9OmCpNZghA', '98wixmq96dk'];
+    const imgArray = [thumbnail, cover1, cover2, cover3]
     const [url, setUrl] = useState(embedIDs[0]);
     const [videoToggle, setVideoToggle] = useState(false);
+    const [showImg, setShowImg] = useState(false);
+    const [image, setImage] = useState(null);
+    const [videos, setVideos] = useState(true);
+    const [events, setEvents] = useState(false);
+    const [photos, setPhotos] = useState(false);
 
-    const YoutubeEmbed = ({ url }) => (
-        <div className="responsiveVideo">
-            <iframe width="853"
-                height="480"
-                src={`https://www.youtube.com/embed/${url}`}
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                title="Embedded youtube" />
-        </div>
-    );
 
     const key = embedIDs.indexOf(url)
-    
+
     const prev = () => {
         let index = embedIDs.indexOf(url);
         if (index === 0) {
@@ -41,6 +41,7 @@ const MediaToggle = () => {
         } else {
             setUrl(embedIDs[index - 1]);
         }
+        setVideoToggle(false)
     }
 
     const next = () => {
@@ -50,6 +51,7 @@ const MediaToggle = () => {
         } else {
             setUrl(embedIDs[index + 1]);
         }
+        setVideoToggle(false)
     }
 
     const swiper = (key) => {
@@ -62,45 +64,91 @@ const MediaToggle = () => {
                 <span className='header'>Media</span>
                 <div className="optionTrayMediaToggle">
                     <span></span>
-                    <div className="toggleOptions">Videos</div>
-                    <div className="toggleOptions">Events</div>
-                    <div className="toggleOptions">Photos</div>
+                    <div className={`toggleOptions ${videos? 'active': ''} `}  onClick={()=>{setVideos(true); setEvents(false); setPhotos(false)}}>Videos</div>
+                    <div className={`toggleOptions ${events? 'active': ''} `} onClick={()=>{setVideos(false); setEvents(true); setPhotos(false)}}>Events</div>
+                    <div className={`toggleOptions ${photos? 'active': ''} `} onClick={()=>{setVideos(false); setEvents(false); setPhotos(true)}}>Photos</div>
                     <span></span>
                 </div>
             </div>
 
-            <div className="videoContainer">
-                <div className="videoWrapperMediaToggle">
-                    <div className="prev" onClick={prev}><img src={prevButton} alt="previousbtn" /></div>
-                    <div className="player"><img classname={`thumbnail ${videoToggle ? 'hide' : ''}`} src={thumbnail} alt='clickbait' onClick={() => { YoutubeEmbed(url); setVideoToggle(!videoToggle) }} /></div>
-                    <div className="next" onClick={next}><img src={nextButton} alt="nextbtn" /></div>
+            {
+                videos &&
+                <div className="videoContainer">
+                    <div className="videoWrapperMediaToggle">
+                        <div className="prev" onClick={prev}><img src={prevButton} alt="previousbtn" /></div>
+                        <div className="player">
+                            <img className={`${videoToggle ? 'hide' : ''}`} src={imgArray[key]} alt='clickbait' onClick={() => setVideoToggle(true)} />
+                            <iframe className={`${!videoToggle ? 'hide' : ''}`} width="560" height="315"
+                                src={`https://www.youtube.com/embed/${url}?autoplay=${videoToggle ? '1' : '0'}`}
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div className="next" onClick={next}><img src={nextButton} alt="nextbtn" /></div>
+                    </div>
+                    <div className="captionTrayMediaToggle">
+                        <div className={`thumbnail ${key === 0 ? 'thumbnailactive' : ' '}`} onClick={() => { swiper(0); setVideoToggle(false) }}><img src={thumbnail} /></div>
+                        <div className={`thumbnail ${key === 1 ? 'thumbnailactive' : ' '}`} onClick={() => { swiper(1); setVideoToggle(false) }}><img src={cover1} /></div>
+                        <div className={`thumbnail ${key === 2 ? 'thumbnailactive' : ' '}`} onClick={() => { swiper(2); setVideoToggle(false) }}><img src={cover2} /></div>
+                        <div className={`thumbnail ${key === 3 ? 'thumbnailactive' : ' '}`} onClick={() => { swiper(3); setVideoToggle(false) }}><img src={cover3} /></div>
+                    </div>
                 </div>
-                <div className="captionTrayMediaToggle">
-                    <div className={`thumbnail ${key === 0 ? 'thumbnailactive' : ' '}`} onClick={() => swiper(0)}><img src={thumbnail} /></div>
-                    <div className={`thumbnail ${key === 1 ? 'thumbnailactive' : ' '}`} onClick={() => swiper(1)}><img src={thumbnail} /></div>
-                    <div className={`thumbnail ${key === 2 ? 'thumbnailactive' : ' '}`} onClick={() => swiper(2)}><img src={thumbnail} /></div>
-                    <div className={`thumbnail ${key === 3 ? 'thumbnailactive' : ' '}`} onClick={() => swiper(3)}><img src={thumbnail} /></div>
+            }
+
+            {
+                events &&
+                <div className="eventContainer">
+                    <div className="leftCover">
+                        <img src={IAS} alt='MeetWithIAS' onClick={() => { setImage(IAS); setShowImg(true) }} />
+                    </div>
+                    <div className="columnSecond">
+                        <div className="topRight">
+                            <img src={enigmach} alt='eventImg' onClick={() => { setImage(enigmach); setShowImg(true) }} />
+                            <img src={enigmach2} alt='eventImg' onClick={() => { setImage(enigmach2); setShowImg(true) }} />
+                        </div>
+                        <div className="bottomRight">
+                            <img src={enigmach3} alt='eventImg' onClick={() => { setImage(enigmach3); setShowImg(true) }} />
+                            <img src={us} alt='ourteam' onClick={() => { setImage(us); setShowImg(true) }} />
+                        </div>
+                    </div>
                 </div>
-            </div>
+            }
 
-            {/* <div className="eventConatiner">
-                <img src = {IAS} alt = 'MeetWithIAS' />
-                <img src = {enigmach} alt = 'eventImg' />
-                <img src = {enigmach2} alt = 'eventImg' />
-                <img src = {enigmach3} alt = 'eventImg' />
-                <img src = {us} alt = 'ourteam' />
-            </div>
-
-            <div className="photoConatiner">
-                <img src = {explore} alt = 'explore' />
-                <img src = {feelthevibe} alt = 'feelthevibe' />
-                <img src = {justLikeUs} alt = 'justlikeus' />
-                <img src = {lowangle} alt = 'lowangle' />
-                <img src = {selfaware} alt = 'selfaware' />
-            </div> */}
-
+            {
+                photos &&
+                <div className="photoContainer">
+                    <div className="leftCoverAI">
+                        <img src={explore} alt='explore' onClick={() => { setImage(explore); setShowImg(true) }} />
+                    </div>
+                    <div className="columnSecondAI">
+                        <div className="topRightAI">
+                            <img src={feelthevibe} alt='feelthevibe' onClick={() => { setImage(feelthevibe); setShowImg(true) }} />
+                            <img src={justLikeUs} alt='justlikeus' onClick={() => { setImage(justLikeUs); setShowImg(true) }} />
+                        </div>
+                        <div className="bottomRightAI">
+                            <img src={lowangle} alt='lowangle' onClick={() => { setImage(lowangle); setShowImg(true) }} />
+                            <img src={selfaware} alt='selfaware' onClick={() => { setImage(selfaware); setShowImg(true) }} />
+                        </div>
+                    </div>
+                </div>
+            }
+            {
+                showImg &&
+                <div className="modal">
+                    <svg className='close' onClick={() => setShowImg(false)} width="30" height="30" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="white" />
+                    </svg>
+                    <OutsideClickHandler className='modalDiv' onOutsideClick={() => setShowImg(false)}>
+                        <img src={image} alt='showImage' />
+                    </OutsideClickHandler>
+                </div>
+            }
         </>
     )
 }
 
 export default MediaToggle
+
+// work on hide element
+// work on each element restores thumbnail setstatetrue

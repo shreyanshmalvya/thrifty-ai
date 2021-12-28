@@ -20,7 +20,9 @@
 }
 
 .whyUsDivWrapper {
+  border: 1px solid white;
   width: 340px;
+  height: 170px;
   background-color: black;
   font-size: 16px;
   padding: 20px 15px;

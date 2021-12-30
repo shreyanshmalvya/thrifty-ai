@@ -20,7 +20,7 @@
 }
 
 .carouselComponentWrapper {
-  margin: 20px 60px;
+  margin: 0px 60px;
   font-family: "NunitoSans";
   font-style: normal;
 }
@@ -80,7 +80,7 @@
 
 .carouselContainer .carouselMiddle .carouselSlides {
   height: calc(100vh - 110px);
-  width: 70%;
+  width: 100%;
 }
 
 .carouselContainer .carouselMiddle .carouselSlides video {
@@ -170,8 +170,8 @@
   min-height: 6.3vw;
   cursor: pointer;
   border-radius: 6px;
-  -webkit-box-shadow: 10px 10px 25px -7px rgba(100, 100, 100, 0.75);
-          box-shadow: 10px 10px 25px -7px rgba(100, 100, 100, 0.75);
+  -webkit-box-shadow: 0px 0px 13px 1px rgba(100, 100, 100, 0.75);
+          box-shadow: 0px 0px 13px 1px rgba(100, 100, 100, 0.75);
 }
 
 .carouselContainer .carouselRight .box img {
@@ -183,8 +183,8 @@
 }
 
 .carouselContainer .carouselRight .boxActive {
-  -webkit-box-shadow: 10px 10px 25px -7px rgba(133, 162, 232, 0.75);
-          box-shadow: 10px 10px 25px -7px rgba(133, 162, 232, 0.75);
+  -webkit-box-shadow: 0px 0px 13px 1px rgba(133, 162, 232, 0.75);
+          box-shadow: 0px 0px 13px 1px rgba(133, 162, 232, 0.75);
 }
 
 @media (max-width: 1200px) {

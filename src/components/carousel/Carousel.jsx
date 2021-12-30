@@ -14,8 +14,8 @@ import prevButton from "../../assets/Icons/prev.png"
 export default function Carousel() {
     const videos = [AditiCarVid, DikshaCarVid, RevanthCarVid, SiddarthCarVid];
     const name = ["Aditi", "Diksha", "Revanth", "Siddarth"];
-    const designation = ["Hospital Worker", "Hotel Manager", "Office Receptionist", "Sales Executive"];
-    const desc = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut ante auctor, sollicitudin ipsum vel, pellentesque nibh. Nulla a sem nec enim sodales finibus eu vel magna.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut ante auctor, sollicitudin ipsum vel, pellentesque nibh. Nulla a sem nec enim sodales finibus eu vel magna.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut ante auctor, sollicitudin ipsum vel, pellentesque nibh. Nulla a sem nec enim sodales finibus eu vel magna.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut ante auctor, sollicitudin ipsum vel, pellentesque nibh. Nulla a sem nec enim sodales finibus eu vel magna."];
+    const designation = ["Sales Assistant", "Customer Assistant", "Telecom", "Education"];
+    const desc = ["24/7 dedicated sales employee is no more a dream but a reality. Introducing AI Sales Assistant that can assist users from A to Z products while recommending items that they would like to buy.", "It takes months to find a customer, and seconds to lose one. Be by your customer's side, always, through our AI Customer Assistant. Gift your customers the best partners who listen to their needs, keep in mind their expectations and deliver the best, always!", "Every customer is different, so are their needs. Our digital people being available 24*7 interacts in the language the customer speaks to personalize customer experience without making them wait.", "Every customer is different, so are their needs. Our digital people being available 24*7 interacts in the language the customer speaks to personalize customer experience without making them wait."];
 
     const [video, setVideo] = useState(videos[0]);  
     const n = videos.indexOf(video);

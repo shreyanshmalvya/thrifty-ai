@@ -82,7 +82,7 @@
   color: white;
   font-family: "NunitoSans";
   font-size: 20px;
-  margin: 80px 40px;
+  margin: 80px 100px;
 }
 
 .whyUsWrapper .whyUsTop {
@@ -92,13 +92,28 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 40px;
 }
 
 .whyUsWrapper .whyUsTop .whyUsTopLeft {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 40px;
+}
+
+.whyUsWrapper .whyUsTop .whyUsTopLeft p {
+  width: 60%;
 }
 
 .whyUsWrapper .whyUsTop .whyUsTopLeft :nth-child(1) {
@@ -201,7 +216,7 @@
 }
 
 .whyUsWrapper .whyUsBottomWrapper {
-  margin: 0 -40px 0 -40px;
+  margin: 0 -100px 0 -100px;
 }
 
 .whyUsWrapper .whyUsBottomWrapper .whyUsThriftyLogo {

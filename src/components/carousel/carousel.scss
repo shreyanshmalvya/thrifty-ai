@@ -20,7 +20,7 @@
 }
 
 .carouselComponentWrapper{
-    margin: 0px 60px;
+    margin: 0px 100px;
     font-family: "NunitoSans";
     font-style: normal;
 }
@@ -111,6 +111,7 @@
             .carouselDesc{
                 font-size: 18px;
                 font-weight: 300;
+                margin-top: 3px;
             }
         }
 
@@ -119,8 +120,8 @@
             justify-content: space-around;
         }
         .box{
-            max-width: 6.3vw;
-            min-height: 6.3vw;
+            max-width: 5vw;
+            min-height: 5vw;
             cursor: pointer;
             border-radius: 6px;
             box-shadow: 0px 0px 13px 1px rgba(100,100,100,0.75);

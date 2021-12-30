@@ -20,7 +20,7 @@
 }
 
 .carouselComponentWrapper {
-  margin: 20px 40px;
+  margin: 20px 60px;
   font-family: "NunitoSans";
   font-style: normal;
 }
@@ -149,11 +149,11 @@
 }
 
 .carouselContainer .carouselRight .carouselRightTop .carouselDesignation {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .carouselContainer .carouselRight .carouselRightTop .carouselDesc {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
 }
 

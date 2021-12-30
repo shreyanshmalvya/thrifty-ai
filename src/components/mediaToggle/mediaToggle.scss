@@ -12,7 +12,7 @@
     src: url("../../fonts/nunito-sans/NunitoSans-Regular.ttf");
 }
 
-.modal{
+.modal {
     top: 0;
     left: 0;
     width: 100vw;
@@ -22,16 +22,16 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    .close{
+    .close {
         position: fixed;
         top: 100px;
         right: 100px;
     }
-    .modalDiv{
+    .modalDiv {
         max-width: 50%;
         box-shadow: 0px 4px 40px 4px rgba(255, 255, 255, 0.2);
     }
-    img{
+    img {
         width: auto;
         height: auto;
         max-width: 100%;
@@ -51,6 +51,7 @@
     .optionTrayMediaToggle {
         display: flex;
         justify-content: center;
+        margin-top: 20px;
         .toggleOptions {
             cursor: pointer;
             font-size: 16px;
@@ -59,15 +60,15 @@
             border: 2px solid white;
             font-family: "NunitoSans";
             text-transform: uppercase;
-            span{
+            span {
                 display: inline-block;
                 height: 16px;
                 width: 16px;
                 color: white;
             }
         }
-        .active{
-            background-color:white;
+        .active {
+            background-color: white;
             color: black;
         }
     }
@@ -79,7 +80,7 @@
         align-items: center;
         justify-content: space-around;
         margin-top: 30px;
-        .hide{
+        .hide {
             display: none !important;
             visibility: hidden !important;
             opacity: 0 !important;
@@ -104,10 +105,9 @@
                     height: 480px;
                     cursor: pointer;
                 }
-                iframe{
+                iframe {
                     width: 853px;
                     height: 480px;
-                    
                 }
             }
             &:nth-child(3) {
@@ -129,13 +129,13 @@
         margin-top: 50px;
         justify-content: center;
         cursor: pointer;
-        .thumbnail{
-            img{
+        .thumbnail {
+            img {
                 opacity: 50%;
             }
         }
-        .thumbnailactive{
-            img{
+        .thumbnailactive {
+            img {
                 opacity: 100%;
             }
         }
@@ -148,36 +148,39 @@
         }
     }
 }
-.eventContainer{
+.eventContainer {
     display: flex;
     margin-top: 30px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    .leftCover{
+    .smallViewportSlider {
+        display: none;
+    }
+    .leftCover {
         object-fit: contain;
         padding: 10px 10px;
-        img{
+        img {
             height: 500px;
         }
     }
-    .columnSecond{
+    .columnSecond {
         margin-top: 9px;
         flex-wrap: wrap;
-        .topRight{
+        .topRight {
             display: flex;
             flex-direction: row;
             object-fit: contain;
-            img{
+            img {
                 width: 430px;
                 padding: 10px 10px;
             }
         }
-        .bottomRight{
+        .bottomRight {
             display: flex;
             flex-direction: row;
             object-fit: cover;
-            img{
+            img {
                 width: 430px;
                 padding: 10px 10px;
             }
@@ -185,41 +188,179 @@
     }
 }
 
-.photoContainer{
+.photoContainer {
     display: flex;
     margin-top: 30px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    .leftCoverAI{
+    .smallViewportSlider{
+        display: none;
+    }
+    .leftCoverAI {
         padding: 10px 10px;
-        img{
+        img {
             object-fit: cover;
-            height: 500px;
+            height: 550px;
             width: 300px;
         }
     }
-    .columnSecondAI{ 
+    .columnSecondAI {
         margin-top: 9px;
         flex-wrap: wrap;
-        .topRightAI{
+        .topRightAI {
             display: flex;
             flex-direction: row;
-            img{
+            img {
                 object-fit: cover;
-                width: 325px;
+                width: 360px;
                 padding: 10px 10px;
             }
         }
-        .bottomRightAI{
+        .bottomRightAI {
             display: flex;
             flex-direction: row;
-            img{
+            img {
                 object-fit: cover;
-                width: 325px;
+                width: 360px;
                 padding: 10px 10px;
             }
         }
     }
+}
+
+@media (max-width: 992px) {
+    .topTrayMediaToggle {
+        .header {
+            display: flex;
+            margin-left: 0;
+            justify-content: center !important;
+            align-items: center !important;
+        }
+    }
+
+    .videoContainer {
+        .videoWrapperMediaToggle {
+            display: flex;
+            justify-content: space-around !important;
+            img {
+                max-width: 650px !important;
+            }
+            iframe {
+                max-width: 750px !important;
+            }
+        }
+    }
+    .eventContainer {
+        justify-content: space-around !important; 
+        .prevWrapper{
+            display: flex;
+            flex-direction: column !important;
+            justify-content: center;
+            .prev {
+                display: flex;
+                flex-direction: column !important;
+                justify-content: space-around !important;
+                width: 61px;
+                height: 44px;
+                background-color: white;
+                border-radius: 3px;
+                cursor: pointer;
+                img {
+                    object-fit: none;
+                }
+            }
+        }   
+        
+        .nextWrapper{
+            display: flex;
+            flex-direction: column !important;
+            justify-content: center;
+            .next {
+                display: flex;
+                justify-content: center;
+                width: 61px;
+                height: 44px;
+                background-color: white;
+                border-radius: 3px;
+                cursor: pointer;
+                img {
+                    object-fit: none;
+                }
+            }
+        }
+        .smallViewportSlider {
+            display: flex;
+            object-fit: contain;
+            padding: 10px 10px;
+            img {
+                max-height: 450px;
+                max-width: 530px;
+            }
+        }
+        .leftCover {
+            display: none;
+        }
+        .columnSecond {
+            display: none;
+        }
+    }
+}
+.photoContainer {
+    justify-content: space-around !important; 
+    .prevWrapper{
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        .prev {
+            display: flex;
+            flex-direction: column !important;
+            justify-content: space-around !important;
+            width: 61px;
+            height: 44px;
+            background-color: white;
+            border-radius: 3px;
+            cursor: pointer;
+            img {
+                object-fit: none;
+            }
+        }
+    }   
+    
+    .nextWrapper{
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        .next {
+            display: flex;
+            justify-content: center;
+            width: 61px;
+            height: 44px;
+            background-color: white;
+            border-radius: 3px;
+            cursor: pointer;
+            img {
+                object-fit: none;
+            }
+        }
+    }
+    .smallViewportSlider {
+        display: flex;
+        object-fit: contain;
+        padding: 10px 10px;
+        img {
+            max-height: 450px;
+            max-width: 530px;
+        }
+    }
+    .leftCoverAI {
+        display: none;
+    }
+    .columnSecondAI {
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
     
 }

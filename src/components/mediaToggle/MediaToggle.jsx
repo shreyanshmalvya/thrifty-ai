@@ -23,6 +23,10 @@ import OutsideClickHandler from 'react-outside-click-wrapper/build/OutsideClickH
 const MediaToggle = () => {
     const embedIDs = ['_j3FQf5yqu8', 'citoCiZUHg0', 'i9OmCpNZghA', '98wixmq96dk'];
     const imgArray = [thumbnail, cover1, cover2, cover3]
+    const eventArray = [IAS, enigmach, enigmach2, enigmach3, us]
+    const eventArrayAI = [explore, feelthevibe, justLikeUs, lowangle, selfaware]
+    const [imgSlider, setImgSlider] = useState(eventArray[0]);
+    const [imgSliderAI, setImgSliderAI] = useState(eventArrayAI[0]);
     const [url, setUrl] = useState(embedIDs[0]);
     const [videoToggle, setVideoToggle] = useState(false);
     const [showImg, setShowImg] = useState(false);
@@ -33,6 +37,42 @@ const MediaToggle = () => {
 
 
     const key = embedIDs.indexOf(url)
+    const imgSliderPrevAI = () => {
+        let point = eventArrayAI.indexOf(imgSliderAI);
+        if (point === 0) {
+            setImgSliderAI(eventArrayAI[eventArrayAI.length - 1]);
+        } else {
+            setImgSliderAI(eventArrayAI[point - 1]);
+        }
+    }
+    const imgSliderNextAI = () => {
+        let point = eventArrayAI.indexOf(imgSliderAI);
+        if (point === eventArrayAI.length - 1) {
+            setImgSliderAI(eventArrayAI[0]);
+        } else {
+            setImgSliderAI(eventArrayAI[point + 1]);
+        }
+    }
+
+    const imgSliderPrev = () => {
+        let pointer = eventArray.indexOf(imgSlider);
+        if (pointer === 0) {
+            setImgSlider(eventArray[eventArray.length - 1]);
+        } else {
+            setImgSlider(eventArray[pointer - 1]);
+        }
+        console.log(pointer);
+    }
+    const imgSliderNext = () => {
+        let pointer = eventArray.indexOf(imgSlider);
+        if (pointer === eventArray.length - 1) {
+            setImgSlider(eventArray[0]);
+        } else {
+            setImgSlider(eventArray[pointer + 1]);
+        }
+        console.log(pointer);
+    }
+
 
     const prev = () => {
         let index = embedIDs.indexOf(url);
@@ -64,9 +104,9 @@ const MediaToggle = () => {
                 <span className='header'>Media</span>
                 <div className="optionTrayMediaToggle">
                     <span></span>
-                    <div className={`toggleOptions ${videos? 'active': ''} `}  onClick={()=>{setVideos(true); setEvents(false); setPhotos(false)}}>Videos</div>
-                    <div className={`toggleOptions ${events? 'active': ''} `} onClick={()=>{setVideos(false); setEvents(true); setPhotos(false)}}>Events</div>
-                    <div className={`toggleOptions ${photos? 'active': ''} `} onClick={()=>{setVideos(false); setEvents(false); setPhotos(true)}}>Photos</div>
+                    <div className={`toggleOptions ${videos ? 'active' : ''} `} onClick={() => { setVideos(true); setEvents(false); setPhotos(false) }}>Videos</div>
+                    <div className={`toggleOptions ${events ? 'active' : ''} `} onClick={() => { setVideos(false); setEvents(true); setPhotos(false) }}>Events</div>
+                    <div className={`toggleOptions ${photos ? 'active' : ''} `} onClick={() => { setVideos(false); setEvents(false); setPhotos(true) }}>Photos</div>
                     <span></span>
                 </div>
             </div>
@@ -78,7 +118,7 @@ const MediaToggle = () => {
                         <div className="prev" onClick={prev}><img src={prevButton} alt="previousbtn" /></div>
                         <div className="player">
                             <img className={`${videoToggle ? 'hide' : ''}`} src={imgArray[key]} alt='clickbait' onClick={() => setVideoToggle(true)} />
-                            <iframe className={`${!videoToggle ? 'hide' : ''}`} width="560" height="315"
+                            <iframe className={`${!videoToggle ? 'hide' : ''}`}
                                 src={`https://www.youtube.com/embed/${url}?autoplay=${videoToggle ? '1' : '0'}`}
                                 frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -99,6 +139,10 @@ const MediaToggle = () => {
             {
                 events &&
                 <div className="eventContainer">
+                    <div className="prevWrapper">
+                        <div className="prev" onClick={imgSliderPrev}><img src={prevButton} alt="previousbtn" /></div>
+                    </div>
+                    <div className="smallViewportSlider"><img src={imgSlider} alt='CarouselForImg' /></div>
                     <div className="leftCover">
                         <img src={IAS} alt='MeetWithIAS' onClick={() => { setImage(IAS); setShowImg(true) }} />
                     </div>
@@ -112,12 +156,19 @@ const MediaToggle = () => {
                             <img src={us} alt='ourteam' onClick={() => { setImage(us); setShowImg(true) }} />
                         </div>
                     </div>
+                    <div className="nextWrapper">
+                        <div className="next" onClick={imgSliderNext}><img src={nextButton} alt="nextbtn" /></div>
+                    </div>
                 </div>
             }
 
             {
                 photos &&
                 <div className="photoContainer">
+                    <div className="prevWrapper">
+                        <div className="prev" onClick={imgSliderPrevAI}><img src={prevButton} alt="previousbtn" /></div>
+                    </div>
+                    <div className="smallViewportSlider"><img src={imgSliderAI} alt='CarouselForImg' /></div>
                     <div className="leftCoverAI">
                         <img src={explore} alt='explore' onClick={() => { setImage(explore); setShowImg(true) }} />
                     </div>
@@ -130,6 +181,9 @@ const MediaToggle = () => {
                             <img src={lowangle} alt='lowangle' onClick={() => { setImage(lowangle); setShowImg(true) }} />
                             <img src={selfaware} alt='selfaware' onClick={() => { setImage(selfaware); setShowImg(true) }} />
                         </div>
+                    </div>
+                    <div className="nextWrapper">
+                        <div className="next" onClick={imgSliderNextAI}><img src={nextButton} alt="nextbtn" /></div>
                     </div>
                 </div>
             }
@@ -148,7 +202,4 @@ const MediaToggle = () => {
     )
 }
 
-export default MediaToggle
-
-// work on hide element
-// work on each element restores thumbnail setstatetrue
+export default MediaToggle;

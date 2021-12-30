@@ -68,6 +68,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 20px;
 }
 
 .topTrayMediaToggle .optionTrayMediaToggle .toggleOptions {
@@ -208,6 +209,10 @@
           justify-content: center;
 }
 
+.eventContainer .smallViewportSlider {
+  display: none;
+}
+
 .eventContainer .leftCover {
   -o-object-fit: contain;
      object-fit: contain;
@@ -274,6 +279,10 @@
           justify-content: center;
 }
 
+.photoContainer .smallViewportSlider {
+  display: none;
+}
+
 .photoContainer .leftCoverAI {
   padding: 10px 10px;
 }
@@ -281,7 +290,7 @@
 .photoContainer .leftCoverAI img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 500px;
+  height: 550px;
   width: 300px;
 }
 
@@ -304,7 +313,7 @@
 .photoContainer .columnSecondAI .topRightAI img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 325px;
+  width: 360px;
   padding: 10px 10px;
 }
 
@@ -321,7 +330,212 @@
 .photoContainer .columnSecondAI .bottomRightAI img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 325px;
+  width: 360px;
   padding: 10px 10px;
+}
+
+@media (max-width: 992px) {
+  .topTrayMediaToggle .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .videoContainer .videoWrapperMediaToggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+  }
+  .videoContainer .videoWrapperMediaToggle img {
+    max-width: 650px !important;
+  }
+  .videoContainer .videoWrapperMediaToggle iframe {
+    max-width: 750px !important;
+  }
+  .eventContainer {
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+  }
+  .eventContainer .prevWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .eventContainer .prevWrapper .prev {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+    width: 61px;
+    height: 44px;
+    background-color: white;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .eventContainer .prevWrapper .prev img {
+    -o-object-fit: none;
+       object-fit: none;
+  }
+  .eventContainer .nextWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .eventContainer .nextWrapper .next {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 61px;
+    height: 44px;
+    background-color: white;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .eventContainer .nextWrapper .next img {
+    -o-object-fit: none;
+       object-fit: none;
+  }
+  .eventContainer .smallViewportSlider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -o-object-fit: contain;
+       object-fit: contain;
+    padding: 10px 10px;
+  }
+  .eventContainer .smallViewportSlider img {
+    max-height: 450px;
+    max-width: 530px;
+  }
+  .eventContainer .leftCover {
+    display: none;
+  }
+  .eventContainer .columnSecond {
+    display: none;
+  }
+}
+
+.photoContainer {
+  -ms-flex-pack: distribute !important;
+      justify-content: space-around !important;
+}
+
+.photoContainer .prevWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.photoContainer .prevWrapper .prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -ms-flex-pack: distribute !important;
+      justify-content: space-around !important;
+  width: 61px;
+  height: 44px;
+  background-color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.photoContainer .prevWrapper .prev img {
+  -o-object-fit: none;
+     object-fit: none;
+}
+
+.photoContainer .nextWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.photoContainer .nextWrapper .next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 61px;
+  height: 44px;
+  background-color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.photoContainer .nextWrapper .next img {
+  -o-object-fit: none;
+     object-fit: none;
+}
+
+.photoContainer .smallViewportSlider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 10px 10px;
+}
+
+.photoContainer .smallViewportSlider img {
+  max-height: 450px;
+  max-width: 530px;
+}
+
+.photoContainer .leftCoverAI {
+  display: none;
+}
+
+.photoContainer .columnSecondAI {
+  display: none;
 }
 /*# sourceMappingURL=mediaToggle.css.map */

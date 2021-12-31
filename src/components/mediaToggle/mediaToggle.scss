@@ -638,6 +638,7 @@
     }
     .eventContainer {
         display: flex;
+        position: relative;
         flex-direction: column;
         flex-wrap: none;
         .smallViewportSlider{
@@ -646,7 +647,9 @@
         }
         .prevWrapper {
             position: absolute;
-            margin-left: 10px !important;
+            top: 50%;
+            transform: translateY(-50%);
+            left:  20px;
             .prev{
                 background-color: rgba(2, 2, 2, 0.815) !important;
                 border: 0.5px solid white !important;
@@ -654,7 +657,9 @@
         }
         .nextWrapper {
             position: absolute;
-            margin-left: 310px !important; // bug
+            top: 50%;
+            transform: translateY(-50%);
+            right:  20px;
             .next{
                 background-color: rgba(2, 2, 2, 0.815) !important;
                 border: 0.5px solid white !important;
@@ -664,6 +669,7 @@
     .photoContainer{
         display: flex;
         flex-direction: column;
+        position: relative;
         flex-wrap: none;
         .smallViewportSlider{
             justify-content: center !important;
@@ -671,7 +677,9 @@
         }
         .prevWrapper {
             position: absolute;
-            margin-left: 10px !important;
+            top: 50%;
+            transform: translateY(-50%);
+            left:  30px;
             .prev{
                 background-color: rgba(2, 2, 2, 0.815) !important;
                 border: 0.5px solid white !important;
@@ -679,7 +687,9 @@
         }
         .nextWrapper {
             position: absolute;
-            margin-left: 310px !important; //bug
+            top: 50%;
+            transform: translateY(-50%);
+            right:  30px;
             .next{
                 background-color: rgba(2, 2, 2, 0.815) !important;
                 border: 0.5px solid white !important;

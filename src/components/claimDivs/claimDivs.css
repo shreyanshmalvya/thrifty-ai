@@ -31,17 +31,12 @@
       -ms-flex-align: center;
           align-items: center;
   width: 280px;
-  padding: 0px 5px;
   margin-bottom: -3px;
   background-color: white;
 }
 
-.styledDivWrapper .captionTxt {
-  font-family: "Inter";
-  font-weight: 800;
-  font-size: 48px;
-  text-align: center;
-  margin-bottom: 6px;
+.styledDivWrapper .claimImg {
+  width: 100%;
 }
 
 .styledDivWrapper .bodyTxt {

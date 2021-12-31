@@ -52,7 +52,7 @@ $animationSpeed: 40s;
     .whyUsTop{
         display: flex;
         align-items: center;
-        margin-bottom: 40px;
+        margin: 80px 100px 40px 100px;
         .whyUsTopLeft{
             flex: 1;
             display: flex;
@@ -171,38 +171,15 @@ $animationSpeed: 40s;
     justify-content: center;
     align-items: center;
 	background: black;
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-	// height: 250px;
 	margin: auto;
 	overflow:hidden;
 	position: relative;
-	width: 90%;
     border-radius: 3px;
-    // &::before,
-	// &::after {
-	// 	@include white-gradient;
-	// 	content: "";
-	// 	height: 100%;
-	// 	position: absolute;
-	// 	width: 40px;
-	// 	z-index: 2;
-	// }
-	
-	// &::after {
-	// 	right: 0;
-	// 	top: 0;
-	// 	transform: rotateZ(180deg);
-	// }
-
-	// &::before {
-	// 	left: 0;
-	// 	top: 0;
-	// }
 	
 	.slide-track {
 		animation: scroll $animationSpeed linear infinite;
 		display: flex;
-		width: calc(440px * 6); 
+		// width: calc(440px * 6); 
 	}
 	
 	.slide {
@@ -216,7 +193,33 @@ $animationSpeed: 40s;
     display: none !important;
 }
 
-@media(max-width: 1300px){
+@media(max-width: 1800px){
+    .whyUsTopLeft{
+        p{
+            width: 80% !important;
+        }
+    }
+    .card{
+        width: 80% !important;
+    }
+}
+    
+@media(max-width: 1400px){
+    .whyUsTop{
+        flex-direction: column;
+        align-items: normal !important;
+        .whyUsTopLeft{
+            p{
+                text-align: center;
+                width: 100% !important;
+            }
+        }
+    }
+    .card{
+        min-width: 340px;
+        max-width: 400px;
+        font-size: 13px !important;
+    }
     .whyUsBottomLeft{
         display: none !important;
     }
@@ -249,6 +252,18 @@ $animationSpeed: 40s;
     }
     .whyUsDesign{
         display: none !important;
+    }
+}
+
+@media(max-width: 992px){
+    .whyUsWrapper{
+        margin: 0 !important;
+    }
+    .whyUsTop{
+        margin: 40px 20px;
+    }
+    .whyUsTop{
+        margin: 20px !important;
     }
 }
     

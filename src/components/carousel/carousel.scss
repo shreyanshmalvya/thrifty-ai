@@ -210,6 +210,12 @@
       }
     
   }
+
+  @media (max-width: 768px){
+    .carouselRightBottom{
+        width: 340px !important;
+    }
+  }
   
   @media (max-width: 360px){
    

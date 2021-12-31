@@ -92,7 +92,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 40px;
+  margin: 80px 100px 40px 100px;
 }
 
 .whyUsWrapper .whyUsTop .whyUsTopLeft {
@@ -268,12 +268,9 @@
       -ms-flex-align: center;
           align-items: center;
   background: black;
-  -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-          box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 90%;
   border-radius: 3px;
 }
 
@@ -283,7 +280,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: calc(440px * 6);
 }
 
 .slider .slide {
@@ -296,7 +292,34 @@
   display: none !important;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1800px) {
+  .whyUsTopLeft p {
+    width: 80% !important;
+  }
+  .card {
+    width: 80% !important;
+  }
+}
+
+@media (max-width: 1400px) {
+  .whyUsTop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: normal !important;
+        -ms-flex-align: normal !important;
+            align-items: normal !important;
+  }
+  .whyUsTop .whyUsTopLeft p {
+    text-align: center;
+    width: 100% !important;
+  }
+  .card {
+    min-width: 340px;
+    max-width: 400px;
+    font-size: 13px !important;
+  }
   .whyUsBottomLeft {
     display: none !important;
   }
@@ -331,6 +354,18 @@
   }
   .whyUsDesign {
     display: none !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .whyUsWrapper {
+    margin: 0 !important;
+  }
+  .whyUsTop {
+    margin: 40px 20px;
+  }
+  .whyUsTop {
+    margin: 20px !important;
   }
 }
 /*# sourceMappingURL=whyUs.css.map */

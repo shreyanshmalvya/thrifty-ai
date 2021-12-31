@@ -260,4 +260,10 @@
     min-width: 75px;
   }
 }
+
+@media (max-width: 768px) {
+  .carouselRightBottom {
+    width: 340px !important;
+  }
+}
 /*# sourceMappingURL=carousel.css.map */

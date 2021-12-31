@@ -144,6 +144,10 @@
   padding: 150px 0 150px 40px;
 }
 
+.carouselContainer .carouselRight .carouselRightTop {
+  margin-bottom: 80px;
+}
+
 .carouselContainer .carouselRight .carouselRightTop .carouselName {
   font-size: 35px;
   font-weight: 800;
@@ -212,6 +216,9 @@
     width: 13px;
     height: 7px;
   }
+  .carouselComponentWrapper .carouselContainer .carouselRight {
+    padding: 20px 0 20px 40px;
+  }
   .carouselComponentWrapper .carouselContainer .carouselRight .carouselName {
     font-size: 25px;
   }
@@ -242,7 +249,7 @@
     margin-bottom: 20px;
   }
   .carouselContainer .carouselRight {
-    padding-left: 0;
+    padding-left: 0 !important;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

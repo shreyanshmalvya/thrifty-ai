@@ -133,7 +133,7 @@
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
-  width: 70% !important;
+  width: 70%;
 }
 
 .whyUsWrapper .whyUsTop .whyUsTopRight {
@@ -298,6 +298,7 @@
   overflow: hidden;
   position: relative;
   border-radius: 3px;
+  display: none !important;
 }
 
 .slider .slide-track {
@@ -309,13 +310,7 @@
 }
 
 .slider .slide {
-  width: 340px;
-  height: 172px;
   margin-right: 100px;
-}
-
-.slider {
-  display: none !important;
 }
 
 @media (max-width: 1800px) {
@@ -336,14 +331,28 @@
     -webkit-box-align: normal !important;
         -ms-flex-align: normal !important;
             align-items: normal !important;
+    margin: 0px 0px 150px 0px !important;
+  }
+  .whyUsTop .whyUsTopLeft {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .whyUsTop .whyUsTopLeft p {
     text-align: center;
     width: 100% !important;
   }
+  .whyUsTop .whyUsTopRight {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .whyUsThriftyLogo {
+    display: none !important;
+  }
   .card {
     min-width: 340px;
-    max-width: 400px;
+    max-width: 500px;
     font-size: 13px !important;
   }
   .whyUsBottomLeft {
@@ -362,6 +371,11 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-bottom: 0 !important;
+    background-color: black !important;
+  }
+  .whyUsDesign {
+    display: none !important;
   }
   .carouselDesktop {
     display: none !important;
@@ -369,29 +383,48 @@
   .whyUsBottomLeft {
     display: none !important;
   }
-  .whyUsBottomRight {
-    margin-right: 0 !important;
-  }
   .slider {
     display: block !important;
   }
-  .whyUsBottom {
-    background-color: black !important;
+  .whyUsTop {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
-  .whyUsDesign {
-    display: none !important;
+  .whyUsTop .whyUsTopLeft p {
+    width: 100% !important;
   }
 }
 
 @media (max-width: 992px) {
+  .whyUsTopLeft {
+    margin-bottom: 20px !important;
+  }
+  .whyUsTopLeft :nth-child(1) {
+    font-size: 42px !important;
+    margin-bottom: 15px !important;
+  }
+  .whyUsTopLeft :nth-child(2) {
+    font-size: 20px !important;
+    margin-bottom: 15px !important;
+  }
+  .whyUsTopLeft :nth-child(3) {
+    font-size: 18px !important;
+  }
+  .whyUsBottom {
+    padding: 0 !important;
+  }
   .whyUsWrapper {
-    margin: 0 !important;
+    margin-bottom: 0px !important;
   }
-  .whyUsTop {
-    margin: 40px 20px;
+}
+
+@media (max-width: 768px) {
+  .whyUsBottomWrapper {
+    width: calc(100vw + 90px);
   }
-  .whyUsTop {
-    margin: 20px !important;
+  .whyUsWrapper {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
   }
 }
 /*# sourceMappingURL=whyUs.css.map */

@@ -32,9 +32,9 @@
 
 .modal .close {
   position: fixed;
-  top: 100px;
+  top: 150px;
   right: 100px;
-  z-index: 999999;
+  z-index: 10001;
 }
 
 .modal .modalDiv {

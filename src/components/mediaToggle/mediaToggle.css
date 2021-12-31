@@ -183,11 +183,11 @@
 }
 
 .videoContainer .captionTrayMediaToggle .thumbnail img {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .videoContainer .captionTrayMediaToggle .thumbnailactive img {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .videoContainer .captionTrayMediaToggle div img {

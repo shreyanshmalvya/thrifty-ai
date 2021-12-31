@@ -135,12 +135,12 @@
         padding-bottom: 40px;
         .thumbnail {
             img {
-                opacity: 50%;
+                opacity: 0.5;
             }
         }
         .thumbnailactive {
             img {
-                opacity: 100%;
+                opacity: 1;
             }
         }
         div {

@@ -23,15 +23,20 @@
     flex-direction: column;
     align-items: center;
     width: 280px;
+    padding: 3px;
     margin-bottom: -3px;
     background-color: white;
+    -webkit-clip-path: polygon(90% 0, 100% 15%, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(90% 0, 100% 15%, 100% 100%, 0 100%, 0 0);
 
     
     .claimImg {
         width: 100%;
+        -webkit-clip-path: polygon(90% 0, 100% 19%, 100% 100%, 0 100%, 0 0);        
+        clip-path: polygon(90% 0, 100% 19%, 100% 100%, 0 100%, 0 0);
     }
     .bodyTxt {
-        padding-top: 2px;
+        padding-top: 12px;
         font-family: "Inter";
         font-size: 17px;
         font-weight: 500;

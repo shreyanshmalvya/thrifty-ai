@@ -41,7 +41,7 @@ const ContactUs = () => {
                             <label for="message-textarea">Message</label>
                             <textarea id="message-textarea" placeholder="Write us a message"></textarea>
                         </div>
-                        <button>Send message</button>
+                        <button>Book Now!</button>
                     </form>
                 </div>
             </div>

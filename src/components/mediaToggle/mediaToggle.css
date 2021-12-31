@@ -178,6 +178,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
+  padding-bottom: 40px;
 }
 
 .videoContainer .captionTrayMediaToggle .thumbnail img {

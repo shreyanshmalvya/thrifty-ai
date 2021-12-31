@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react/cjs/react.development';
 import './mediaToggle.css'
 import nextButton from "../../assets/Icons/next.png"
-import prevButton from "../../assets/Icons/prev.png"
+import prevButton from "../../assets/Icons/prev.svg"
 import explore from '../../assets/ai-samples/explore.jpg'
 import feelthevibe from '../../assets/ai-samples/feelthevibe.png'
 import justLikeUs from '../../assets/ai-samples/justLikeUs.png'
@@ -125,7 +125,7 @@ const MediaToggle = () => {
                                 allowfullscreen>
                             </iframe>
                         </div>
-                        <div className="next" onClick={next}><img src={nextButton} alt="nextbtn" /></div>
+                        <div className="next" onClick={next}><img src={prevButton} alt="nextbtn" /></div>
                     </div>
                     <div className="captionTrayMediaToggle">
                         <div className={`thumbnail ${key === 0 ? 'thumbnailactive' : ' '}`} onClick={() => { swiper(0); setVideoToggle(false) }}><img src={thumbnail} /></div>
@@ -144,7 +144,7 @@ const MediaToggle = () => {
                     </div>
                     <div className="smallViewportSlider"><img src={imgSlider} alt='CarouselForImg' /></div>
                     <div className="leftCover">
-                        <img src={IAS} alt='MeetWithIAS' onClick={() => { setImage(IAS); setShowImg(true) }} />
+                        <img src={IAS} alt='MeetWithIAS' onClick={() => {setImage(IAS); setShowImg(true) }} />
                     </div>
                     <div className="columnSecond">
                         <div className="topRight">
@@ -157,7 +157,7 @@ const MediaToggle = () => {
                         </div>
                     </div>
                     <div className="nextWrapper">
-                        <div className="next" onClick={imgSliderNext}><img src={nextButton} alt="nextbtn" /></div>
+                        <div className="next" onClick={imgSliderNext}><img src={prevButton} alt="nextbtn" /></div>
                     </div>
                 </div>
             }
@@ -183,7 +183,7 @@ const MediaToggle = () => {
                         </div>
                     </div>
                     <div className="nextWrapper">
-                        <div className="next" onClick={imgSliderNextAI}><img src={nextButton} alt="nextbtn" /></div>
+                        <div className="next" onClick={imgSliderNextAI}><img src={prevButton} alt="nextbtn" /></div>
                     </div>
                 </div>
             }

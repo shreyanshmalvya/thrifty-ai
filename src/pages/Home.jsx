@@ -6,6 +6,7 @@ import ClaimDivRows from '../components/claimDivRow/ClaimDivRows';
 import Carousel from '../components/carousel/Carousel';
 import WhyUs from '../components/whyUs/WhyUs';
 import MediaToggle from '../components/mediaToggle/MediaToggle';
+import ContactUs from '../components/contactus/ContactUs';
 // import ClaimDivs from '../components/claimDivs/ClaimDivs';
 
 const Home = () => {
@@ -14,10 +15,11 @@ const Home = () => {
             <Navbar />
             <Hero />
             <IntroAI />
-            <Carousel/>
+            <Carousel />
             <ClaimDivRows/>
+            <WhyUs />
             <MediaToggle />
-            <WhyUs/>
+            <ContactUs />
         </div>
     )
 }

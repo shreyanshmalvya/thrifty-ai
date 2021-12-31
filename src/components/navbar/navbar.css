@@ -25,6 +25,7 @@
   margin-top: 40px;
   padding: 10px 0px;
   background-color: black;
+  z-index: 10000;
 }
 
 .navbar .navabarLogo {
@@ -194,7 +195,7 @@
 /* Responsive */
 @media (max-width: 768px) {
   .navbar {
-    z-index: 100;
+    z-index: 10000;
   }
   .navbar .navabarLogo {
     margin-left: 30px !important;

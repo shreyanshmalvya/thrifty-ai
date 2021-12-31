@@ -14,7 +14,9 @@ const Home = () => {
             <Navbar />
             <Hero />
             <IntroAI />
+            <Carousel />
             <ClaimDivRows/>
+            <WhyUs />
             <MediaToggle />
         </div>
     )

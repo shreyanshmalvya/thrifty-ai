@@ -1,5 +1,4 @@
-import React from 'react'
-import { useState } from 'react/cjs/react.development';
+import React, { useState } from 'react'
 import './mediaToggle.css'
 import nextButton from "../../assets/Icons/next.png"
 import prevButton from "../../assets/Icons/prev.svg"
@@ -17,7 +16,7 @@ import thumbnail from '../../assets/videoThumbnails/thumbnail.jpg'
 import cover1 from '../../assets/videoThumbnails/cover1.jpg'
 import cover2 from '../../assets/videoThumbnails/cover2.jpg'
 import cover3 from '../../assets/videoThumbnails/cover3.jpg'
-import OutsideClickHandler from 'react-outside-click-wrapper/build/OutsideClickHandler';
+import OutsideClickHandler from 'react-outside-click-wrapper';
 
 
 const MediaToggle = () => {

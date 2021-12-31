@@ -848,6 +848,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -865,7 +866,10 @@
   }
   .eventContainer .prevWrapper {
     position: absolute;
-    margin-left: 10px !important;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 20px;
   }
   .eventContainer .prevWrapper .prev {
     background-color: rgba(2, 2, 2, 0.815) !important;
@@ -873,7 +877,10 @@
   }
   .eventContainer .nextWrapper {
     position: absolute;
-    margin-left: 310px !important;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: 20px;
   }
   .eventContainer .nextWrapper .next {
     background-color: rgba(2, 2, 2, 0.815) !important;
@@ -887,6 +894,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    position: relative;
     -ms-flex-wrap: none;
         flex-wrap: none;
   }
@@ -900,7 +908,10 @@
   }
   .photoContainer .prevWrapper {
     position: absolute;
-    margin-left: 10px !important;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 30px;
   }
   .photoContainer .prevWrapper .prev {
     background-color: rgba(2, 2, 2, 0.815) !important;
@@ -908,7 +919,10 @@
   }
   .photoContainer .nextWrapper {
     position: absolute;
-    margin-left: 310px !important;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: 30px;
   }
   .photoContainer .nextWrapper .next {
     background-color: rgba(2, 2, 2, 0.815) !important;

@@ -1,11 +1,10 @@
-import React from 'react'
-import { useState } from 'react/cjs/react.development';
+import React, { useState } from 'react'
 import './mediaToggle.css'
 import nextButton from "../../assets/Icons/next.png"
 import prevButton from "../../assets/Icons/prev.svg"
 import explore from '../../assets/ai-samples/explore.jpg'
 import feelthevibe from '../../assets/ai-samples/feelthevibe.png'
-import justLikeUs from '../../assets/ai-samples/justLikeUs.png'
+import justLikeUs from '../../assets/ai-samples/justLikeUS.png'
 import lowangle from '../../assets/ai-samples/lowangle.png'
 import selfaware from '../../assets/ai-samples/selfaware.png'
 import enigmach from '../../assets/events/enigmach.jpeg'
@@ -17,7 +16,7 @@ import thumbnail from '../../assets/videoThumbnails/thumbnail.jpg'
 import cover1 from '../../assets/videoThumbnails/cover1.jpg'
 import cover2 from '../../assets/videoThumbnails/cover2.jpg'
 import cover3 from '../../assets/videoThumbnails/cover3.jpg'
-import OutsideClickHandler from 'react-outside-click-wrapper/build/OutsideClickHandler';
+import OutsideClickHandler from 'react-outside-click-wrapper';
 
 
 const MediaToggle = () => {

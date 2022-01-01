@@ -83,7 +83,7 @@ $animationSpeed: 40s;
                 font-style: normal;
                 font-weight: 300;
                 font-size: 24px;
-                width: 70% !important;
+                width: 70%;
             }
         }
         .whyUsTopRight{
@@ -211,6 +211,7 @@ $animationSpeed: 40s;
 	overflow:hidden;
 	position: relative;
     border-radius: 3px;
+    display: none !important;
 	
 	.slide-track {
 		animation: scroll $animationSpeed linear infinite;
@@ -219,14 +220,8 @@ $animationSpeed: 40s;
 	}
 	
 	.slide {
-		// height: 250px;
-		width: 340px;
-        height: 172px;
         margin-right: 100px;
 	}
-}
-.slider{
-    display: none !important;
 }
 
 @media(max-width: 1800px){
@@ -244,16 +239,24 @@ $animationSpeed: 40s;
     .whyUsTop{
         flex-direction: column;
         align-items: normal !important;
+        margin: 0px 0px 150px 0px !important;
         .whyUsTopLeft{
+            align-items: center;
             p{
                 text-align: center;
                 width: 100% !important;
             }
         }
+        .whyUsTopRight{
+            justify-content: center !important;
+        }
+    }
+    .whyUsThriftyLogo{
+        display: none !important;
     }
     .card{
         min-width: 340px;
-        max-width: 400px;
+        max-width: 500px;
         font-size: 13px !important;
     }
     .whyUsBottomLeft{
@@ -270,6 +273,12 @@ $animationSpeed: 40s;
 @media(max-width: 1200px){
     .whyUsBottom{
         justify-content: center;
+        padding-bottom: 0 !important;
+        background-color: black !important;
+
+    }
+    .whyUsDesign{
+        display: none !important;
     }
     .carouselDesktop{
         display: none !important;
@@ -277,29 +286,50 @@ $animationSpeed: 40s;
     .whyUsBottomLeft{
         display: none !important;
     }
-    .whyUsBottomRight{
-        margin-right: 0 !important;
-    }
+
     .slider{
         display: block !important;
     }
-    .whyUsBottom{
-        background-color: black !important;
-    }
-    .whyUsDesign{
-        display: none !important;
+    
+    .whyUsTop{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        .whyUsTopLeft{
+            p{
+                width: 100% !important;
+            }
+        }
     }
 }
 
 @media(max-width: 992px){
+    .whyUsTopLeft{
+        margin-bottom: 20px !important;
+        :nth-child(1){
+            font-size: 42px !important;
+            margin-bottom: 15px !important;
+        }
+        :nth-child(2){
+            font-size: 20px !important;
+            margin-bottom: 15px !important;
+        }
+        :nth-child(3){
+            font-size: 18px !important;
+        }
+    }
+    .whyUsBottom{
+        padding: 0 !important;
+    }
     .whyUsWrapper{
-        margin: 0 !important;
+        margin-bottom: 0px !important;
+    }  
+}
+@media(max-width: 768px){
+    .whyUsBottomWrapper{
+        width: calc(100vw + 90px);
     }
-    .whyUsTop{
-        margin: 40px 20px;
-    }
-    .whyUsTop{
-        margin: 20px !important;
+    .whyUsWrapper{
+        margin-left: 10px !important;
+        margin-right: 10px !important;
     }
 }
-    

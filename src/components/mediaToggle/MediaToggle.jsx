@@ -141,7 +141,7 @@ const MediaToggle = () => {
                     <div className="prevWrapper">
                         <div className="prev" onClick={imgSliderPrev}><img src={prevButton} alt="previousbtn" /></div>
                     </div>
-                    <div className="smallViewportSlider"><img src={imgSlider} alt='CarouselForImg' /></div>
+                    <div className="smallViewportSlider"><img src={imgSlider} alt='CarouselForImg' onClick ={setImage(imgSlider)} /></div>
                     <div className="leftCover">
                         <img src={IAS} alt='MeetWithIAS' onClick={() => {setImage(IAS); setShowImg(true) }} />
                     </div>
@@ -167,7 +167,7 @@ const MediaToggle = () => {
                     <div className="prevWrapper">
                         <div className="prev" onClick={imgSliderPrevAI}><img src={prevButton} alt="previousbtn" /></div>
                     </div>
-                    <div className="smallViewportSlider"><img src={imgSliderAI} alt='CarouselForImg' /></div>
+                    <div className="smallViewportSlider"><img src={imgSliderAI} alt='CarouselForImg' onClick={setImage(imgSliderAI)}/></div>
                     <div className="leftCoverAI">
                         <img src={explore} alt='explore' onClick={() => { setImage(explore); setShowImg(true) }} />
                     </div>

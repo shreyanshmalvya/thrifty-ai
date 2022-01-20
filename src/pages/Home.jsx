@@ -20,7 +20,6 @@ const Home = () => {
             <ClaimDivRows/>
             <WhyUs />
             <MediaToggle />
-            <ContactUs />
             <Footer />
         </div>
     )

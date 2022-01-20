@@ -6,7 +6,6 @@ import ClaimDivRows from '../components/claimDivRow/ClaimDivRows';
 import Carousel from '../components/carousel/Carousel';
 import WhyUs from '../components/whyUs/WhyUs';
 import MediaToggle from '../components/mediaToggle/MediaToggle';
-import ContactUs from '../components/contactus/ContactUs';
 import Footer from '../components/footer/Footer';
 // import ClaimDivs from '../components/claimDivs/ClaimDivs';
 

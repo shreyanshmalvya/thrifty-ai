@@ -57,6 +57,7 @@
 
 .grid .introAITop .introAITopLeft img {
   width: 100%;
+  padding: 0 40px;
 }
 
 .grid .introAITop .introAITopRight {
@@ -154,7 +155,7 @@
 
 .grid .introAIBottom .introAIBottomRight img {
   width: 100%;
-  margin-top: -30px;
+  padding: 0 40px;
 }
 
 @media (max-width: 992px) {
@@ -167,6 +168,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .grid .introAITop .introAITopLeft img {
+    padding: 0 0;
   }
   .grid .introAITop .introAITopRight {
     -webkit-box-align: center;
@@ -198,6 +202,9 @@
   }
   .grid .introAIBottom .introAIBottomLeft span:first-child {
     font-size: 30px;
+  }
+  .grid .introAIBottom .introAIBottomRight {
+    padding: 0 0;
   }
 }
 

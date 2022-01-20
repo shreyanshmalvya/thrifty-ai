@@ -20,7 +20,7 @@ export default function Hero() {
                     <p>AI Humans are AI powered characters that can
                     see, hear and understand. They look like us, talk like us and behave like us</p>
 
-                    <span className="heroButton">Learn More</span>
+                    <span className="heroButton"><a href="#">Learn More</a></span>
                 </div>
 
             </div>

@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 
 const IntroAI = () => {
     useEffect(() => {
-        AOS.init();
+        AOS.init({disable: 'mobile'});
         AOS.refresh();
     }, []);
     return (

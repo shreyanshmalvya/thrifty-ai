@@ -6,10 +6,16 @@ import birla from "../../assets/birla.png";
 import person from "../../assets/person.png";
 import logo from "../../assets/Logo.png";
 import whyUsDesign from "../../assets/whyUsDesign.png"
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import next from "../../assets/Icons/next.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function WhyUs() {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
     const p1 = ["Customer Engagement", "Brand Promise", "Web 5.0 UI"];
     const p2 = ["The way customer interacts with a brand matters a lot", "The consistent good service is what a customer needs to stick longer with your brand but", ""];
     const p3 = ["71% prefer talking with a real human while 54% choose chatbots because it save time.", "57% Indian brands face challenge in maintaining consistent experience across multiple challenges.", "44% users find product search and navigation frustrating while 46% don't transact due to unanswered FAQs"];
@@ -30,12 +36,12 @@ export default function WhyUs() {
     return (
         <div className='whyUsWrapper'>
             <div className="whyUsTop">
-                <div className="whyUsTopLeft">
+                <div data-aos="fade-right" data-aos-duration="900" className="whyUsTopLeft">
                     <p>Why Us?</p>
                     <p>AN AI THAT PUTS YOUR CUSTOMER FIRST</p>
                     <p>​Digital Humans are a huge leap in brand and customer experience, combining the best of online and face-to-face interaction. They are the next generation human form of chatbots</p>
                 </div>
-                <div className="whyUsTopRight">
+                <div data-aos="fade-left" data-aos-duration="900"  className="whyUsTopRight">
                     <div className={flipped?'flipCard card':'card'} >
                         <div className="front">
                             <div className="cardContent">

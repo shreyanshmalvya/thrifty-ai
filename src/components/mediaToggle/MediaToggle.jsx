@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,  useEffect } from 'react'
 import './mediaToggle.css'
 import nextButton from "../../assets/Icons/next.png"
 import prevButton from "../../assets/Icons/prev.svg"
@@ -17,9 +17,15 @@ import cover1 from '../../assets/videoThumbnails/cover1.jpg'
 import cover2 from '../../assets/videoThumbnails/cover2.jpg'
 import cover3 from '../../assets/videoThumbnails/cover3.jpg'
 import OutsideClickHandler from 'react-outside-click-wrapper';
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const MediaToggle = () => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
+
     const embedIDs = ['AR7etZmfHwM', 'etmwkZ2RpHk', 'i9OmCpNZghA', '98wixmq96dk'];
     const imgArray = [thumbnail, cover1, cover2, cover3]
     const eventArray = [IAS, enigmach, enigmach2, enigmach3, us]
@@ -98,7 +104,7 @@ const MediaToggle = () => {
     }
 
     return (
-        <>
+        <div data-aos="fade-up" data-aos-duration="1800">
             <div className='topTrayMediaToggle'>
                 <span className='header'>Media</span>
                 <div className="optionTrayMediaToggle">
@@ -197,7 +203,7 @@ const MediaToggle = () => {
                     </OutsideClickHandler>
                 </div>
             }
-        </>
+        </div>
     )
 }
 

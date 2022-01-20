@@ -203,12 +203,15 @@
   .grid .introAIBottom .introAIBottomLeft span:first-child {
     font-size: 30px;
   }
-  .grid .introAIBottom .introAIBottomRight {
+  .grid .introAIBottom .introAIBottomRight img {
     padding: 0 0;
   }
 }
 
 @media (max-width: 768px) {
+  .grid {
+    padding: 5px 30px 20px 30px;
+  }
   .grid .introAIHeader {
     font-size: 36px !important;
     -webkit-box-pack: center !important;

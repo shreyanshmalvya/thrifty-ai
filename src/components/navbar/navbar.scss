@@ -239,6 +239,9 @@
 }
 
 @media (max-width: 992px) {
+    .navbar {
+        margin-top: 0;
+    }
     .navabarLogo {
         margin-left: 75px !important;
     }

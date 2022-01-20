@@ -20,7 +20,7 @@ import OutsideClickHandler from 'react-outside-click-wrapper';
 
 
 const MediaToggle = () => {
-    const embedIDs = ['_j3FQf5yqu8', 'citoCiZUHg0', 'i9OmCpNZghA', '98wixmq96dk'];
+    const embedIDs = ['AR7etZmfHwM', 'etmwkZ2RpHk', 'i9OmCpNZghA', '98wixmq96dk'];
     const imgArray = [thumbnail, cover1, cover2, cover3]
     const eventArray = [IAS, enigmach, enigmach2, enigmach3, us]
     const eventArrayAI = [explore, feelthevibe, justLikeUs, lowangle, selfaware]

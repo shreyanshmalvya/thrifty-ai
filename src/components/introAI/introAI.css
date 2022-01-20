@@ -57,7 +57,7 @@
 
 .grid .introAITop .introAITopLeft img {
   width: 100%;
-  padding: 0 40px;
+  padding: 0 10px;
 }
 
 .grid .introAITop .introAITopRight {
@@ -155,7 +155,7 @@
 
 .grid .introAIBottom .introAIBottomRight img {
   width: 100%;
-  padding: 0 40px;
+  padding: 0 30px;
 }
 
 @media (max-width: 992px) {

@@ -1,6 +1,6 @@
 import './hero.css'
 import WelcomeVid from "../../assets/Videos/WelcomeVid.mp4"
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -12,10 +12,10 @@ export default function Hero() {
     }, []);
     return (
         <div className="heroWrapper">
-            <div data-aos="fade-right" data-aos-duration="500" className="heroLeft">
+            <div data-aos="slide-right" data-aos-duration="1800" className="heroLeft">
                 <video loop autoPlay muted src={WelcomeVid}></video>
             </div>
-            <div data-aos="fade-left" data-aos-duration="500" data-aos-delay="600" className="heroRight">
+            <div data-aos="fade-left" data-aos-duration="900" data-aos-delay="900" className="heroRight">
                 <div className="heroRTop">
                     <p className="heroGlitchHeading">Ever met an</p>
                     <div className="glitch">

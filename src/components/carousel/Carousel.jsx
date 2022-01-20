@@ -1,5 +1,5 @@
 import "../carousel/carousel.css"
-import { useState } from "react";
+import { useState,  useEffect } from "react";
 import AditiCarVid from "../../assets/Videos/AditiCarVid.mp4"
 import DikshaCarVid from "../../assets/Videos/DikshaCarVid.mp4"
 import RevanthCarVid from "../../assets/Videos/RevanthCarVid.mp4"
@@ -10,8 +10,15 @@ import RevanthThumb from "../../assets/Thumbnails/RevanthThumb.png"
 import SiddarthThumb from "../../assets/Thumbnails/SiddarthThumb.png"
 import nextButton from "../../assets/Icons/next.png"
 import prevButton from "../../assets/Icons/prev.png"
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Carousel() {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
+
     const videos = [AditiCarVid, DikshaCarVid, RevanthCarVid, SiddarthCarVid];
     const name = ["Aditi", "Diksha", "Revanth", "Siddarth"];
     const designation = ["Sales Assistant", "Customer Assistant", "Telecom", "Education"];
@@ -44,20 +51,20 @@ export default function Carousel() {
     return (
         <div className="carouselComponentWrapper">
             <div className="carouselTop">
-                <p className="carouselTopHeading">future generations of worker</p>
+                <p data-aos="fade-down" data-aos-duration="1800"  className="carouselTopHeading">future generations of worker</p>
             </div>
             <div className="carouselContainer">
-                <div className="carouselLeft">
+                <div data-aos="fade-right" data-aos-duration="900" data-aos-delay="300" className="carouselLeft">
                     <p>AI HUMANS FOR EVERY INDUSTRY VERTICAL</p>
                 </div>
-                <div className="carouselMiddle">
+                <div data-aos="slide-up" data-aos-duration="2100" className="carouselMiddle">
                     <div className="carouselSlides">
                         <video loop autoPlay muted src={video}></video>
                     </div>
                     <span className="prev" onClick={prev}><img src={prevButton} alt="" /></span>
                     <span className="next" onClick={next}><img src={nextButton} alt="" /></span>
                 </div>
-                <div className="carouselRight">
+                <div data-aos="fade-left" data-aos-duration="900" data-aos-delay="600" className="carouselRight">
                     <div className="carouselRightTop">
                         <p className="carouselName">{name[n]}</p>
                         <p className="carouselDesignation">{designation[n]}</p>

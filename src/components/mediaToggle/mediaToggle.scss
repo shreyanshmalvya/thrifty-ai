@@ -136,6 +136,7 @@
         .thumbnail {
             img {
                 opacity: 0.5;
+                padding-inline: 20px;
             }
         }
         .thumbnailactive {
@@ -253,6 +254,7 @@
             padding-inline: 100px;
             img {
                 max-width: 150px;
+                padding-inline: 5px !important;
             }
         }
     }

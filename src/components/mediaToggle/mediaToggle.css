@@ -184,6 +184,7 @@
 
 .videoContainer .captionTrayMediaToggle .thumbnail img {
   opacity: 0.5;
+  padding-inline: 20px;
 }
 
 .videoContainer .captionTrayMediaToggle .thumbnailactive img {
@@ -365,6 +366,7 @@
   }
   .videoContainer .captionTrayMediaToggle img {
     max-width: 150px;
+    padding-inline: 5px !important;
   }
   .eventContainer {
     -ms-flex-pack: distribute !important;

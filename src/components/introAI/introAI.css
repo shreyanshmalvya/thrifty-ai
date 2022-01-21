@@ -210,7 +210,7 @@
 
 @media (max-width: 768px) {
   .grid {
-    padding: 5px 30px 20px 30px;
+    padding: 5px 10px 20px 10px;
   }
   .grid .introAIHeader {
     font-size: 36px !important;

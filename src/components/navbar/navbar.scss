@@ -243,7 +243,7 @@
         margin-top: 0;
     }
     .navabarLogo {
-        margin-left: 75px !important;
+        margin-left: 20px !important;
     }
 }
 
@@ -251,7 +251,17 @@
     .navbar {
         margin-top: 0;
     }
+    .navabarLogo{
+        margin-left: 0;
+        img{
+            margin-left: 0px !important;
+            width: 70px !important;
+        }
+    }
     .sideDrawer {
         margin-right: 20px !important;
+        .toggleButton{
+            transform:scale(0.7)
+        }
     }
 }

@@ -280,7 +280,7 @@
     margin-top: 0;
   }
   .navabarLogo {
-    margin-left: 75px !important;
+    margin-left: 20px !important;
   }
 }
 
@@ -288,8 +288,19 @@
   .navbar {
     margin-top: 0;
   }
+  .navabarLogo {
+    margin-left: 0;
+  }
+  .navabarLogo img {
+    margin-left: 0px !important;
+    width: 70px !important;
+  }
   .sideDrawer {
     margin-right: 20px !important;
+  }
+  .sideDrawer .toggleButton {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
 }
 /*# sourceMappingURL=navbar.css.map */

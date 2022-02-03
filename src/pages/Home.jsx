@@ -7,6 +7,7 @@ import Carousel from '../components/carousel/Carousel';
 import WhyUs from '../components/whyUs/WhyUs';
 import MediaToggle from '../components/mediaToggle/MediaToggle';
 import Footer from '../components/footer/Footer';
+import News from '../components/news/News';
 // import ClaimDivs from '../components/claimDivs/ClaimDivs';
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
             <ClaimDivRows/>
             <WhyUs />
             <MediaToggle />
+            <News />
             <Footer />
         </div>
     )
